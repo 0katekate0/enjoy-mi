@@ -1,0 +1,13 @@
+server:
+  port: 8183
+  tomcat:
+    max-threads: 1000
+    accept-count: 1000
+    max-connections: 2000
+    uri-encoding: UTF-8
+spring:
+  profiles:
+    active: ${cn.pro.active:test}
+goods:
+      pic:
+        domain: http://demo5.tp-shop.cn

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>文件上传</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                享学课堂-小米商城项目-mall-web
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../mall-web.iml/index.html">mall-web.iml</a></li>
+                            <li><a href="../pom.xml/index.html">pom.xml</a></li>
+                            <li><a href="../src/index.html">src</a></li>
+                            <li><a href="../target/index.html">target</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 文件上传
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_CommonController.html#upload">
+                        单个文件上传
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_CommonController.html#handleFileUpload">
+                        批量文件上传
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_CommonController.html#error404">
+                        error404
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_CommonController.html#error500">
+                        error500
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 字典数据管理
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#loadDictDataByType">
+                        查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#queryDictDataByTypes">
+                        根据字典数据types获取字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#queryDictDataByType">
+                        根据字典数据type获取字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#queryAllDictTypePage">
+                        全量查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#batchDeleteDictData">
+                        批量删除字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#addDictData">
+                        新增字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#detailDictData">
+                        查询字典详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#updateDictData">
+                        修改字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#deleteDictData">
+                        删除字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictController.html#freezeDictData">
+                        冻结字典数据
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 字典表类型管理
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#queryAllDictTypePage">
+                        查询字典类型列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#batchDeleteDictType">
+                        删除字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#addDictType">
+                        新增字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#detailDictType">
+                        查询字典类型详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#deleteDictType">
+                        删除字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#updateDictType">
+                        修改字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_DictTypeController.html#freezeDictType">
+                        冻结字典类型
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> 登录管理
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#getLoginResource">
+                        获取登录用户的菜单信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#getFileServerUrl">
+                        获取图片服务器的地址
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#unLogin">
+                        没有登录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#accessDenied">
+                        没有权限,请重新登陆
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#logined">
+                        已经登陆成功
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#toLogin">
+                        用户登录接口
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#logout">
+                        用户登出接口
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_LoginController.html#getResourceByParentId">
+                        根据父菜单id获取菜单信息
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> PersonalController
+            </div>
+            <div id="collapse4" class="collapse " aria-labelledby="heading4">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_PersonalController.html#getPersonInfo">
+                        getPersonInfo
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_PersonalController.html#updatePersonalInfo">
+                        updatePersonalInfo
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_PersonalController.html#updateUserInfo">
+                        updateUserInfo
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading5" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse5" aria-controls="collapse5">
+                <i class="glyphicon glyphicon-align-justify"></i> 权限菜单管理
+            </div>
+            <div id="collapse5" class="collapse " aria-labelledby="heading5">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#addResource">
+                        新增菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#queryResourcePage">
+                        查询菜单列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#queryResourceTree">
+                        查询菜单树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#delete">
+                        删除菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#update">
+                        更新菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#getResourceOptions">
+                        获取下拉框菜单数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_ResourceController.html#batchDelete">
+                        批量删除菜单
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading6" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse6" aria-controls="collapse6">
+                <i class="glyphicon glyphicon-align-justify"></i> 角色管理
+            </div>
+            <div id="collapse6" class="collapse " aria-labelledby="heading6">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#addRole">
+                        新增角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#searchRole">
+                        查询角色列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#delete">
+                        删除角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#update">
+                        修改角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#batchDelete">
+                        批量删除角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#detailRole">
+                        角色详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#queryRoleList">
+                        全量查询角色列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_RoleController.html#queryRoleName">
+                        根据用户id 查询角色信息
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading7" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse7" aria-controls="collapse7">
+                <i class="glyphicon glyphicon-align-justify"></i> 系统管理
+            </div>
+            <div id="collapse7" class="collapse " aria-labelledby="heading7">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_SystemController.html#getConfig">
+                        获取工程配置信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_SystemController.html#logoutBySessionId">
+                        登出接口
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading8" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse8" aria-controls="collapse8">
+                <i class="glyphicon glyphicon-align-justify"></i> TestController
+            </div>
+            <div id="collapse8" class="collapse " aria-labelledby="heading8">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_TestController.html#test">
+                        test
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading9" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse9" aria-controls="collapse9">
+                <i class="glyphicon glyphicon-align-justify"></i> 用户管理
+            </div>
+            <div id="collapse9" class="collapse " aria-labelledby="heading9">
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#addUser">
+                        新增用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#searchUsers">
+                        查询用户列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#searchUserList">
+                        全量查询用户列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#detailUser">
+                        查询用户详细信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#delete">
+                        删除用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#update">
+                        更新用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#main">
+                        main
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#batchDelete">
+                        批量删除用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#getUserByIdentityCode">
+                        根据用户编码查询用户信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#queryTimeExtralPage">
+                        工时补录查询
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#resetPassword">
+                        重置密码
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#updatePassword">
+                        密码修改
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#queryContactsPage">
+                        通讯录查询
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#freezeUser">
+                        冻结用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#register">
+                        注册用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_sys_controller_UserController.html#getUserInfo">
+                        查询session中用户信息
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="upload"><a href="#">单个文件上传 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/api/upload</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>file</td>
+                        <td>file</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"string",
+	"msg":"string",
+	"data":{}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_sys_controller_CommonController_upload_cn.enjoy.core.utils.response.HttpResponseBody.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_sys_controller_CommonController_upload_cn.enjoy.core.utils.response.HttpResponseBody.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="handleFileUpload"><a href="#">批量文件上传 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/api/batchUpload</code>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"code":"string",
+	"msg":"string",
+	"data":{}
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_sys_controller_CommonController_handleFileUpload_cn.enjoy.core.utils.response.HttpResponseBody.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_sys_controller_CommonController_handleFileUpload_cn.enjoy.core.utils.response.HttpResponseBody.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="error404"><a href="#">error404 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/404.do</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">object{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="error500"><a href="#">error500 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/500.do</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">object{}</pre>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '文件上传.单个文件上传', url: 'cn_enjoy_sys_controller_CommonController.html#upload'},
+            {name: '文件上传.批量文件上传', url: 'cn_enjoy_sys_controller_CommonController.html#handleFileUpload'},
+            {name: '文件上传.error404', url: 'cn_enjoy_sys_controller_CommonController.html#error404'},
+            {name: '文件上传.error500', url: 'cn_enjoy_sys_controller_CommonController.html#error500'},
+            {name: '字典数据管理.查询字典数据', url: 'cn_enjoy_sys_controller_DictController.html#loadDictDataByType'},
+            {name: '字典数据管理.根据字典数据types获取字典数据', url: 'cn_enjoy_sys_controller_DictController.html#queryDictDataByTypes'},
+            {name: '字典数据管理.根据字典数据type获取字典数据', url: 'cn_enjoy_sys_controller_DictController.html#queryDictDataByType'},
+            {name: '字典数据管理.全量查询字典数据', url: 'cn_enjoy_sys_controller_DictController.html#queryAllDictTypePage'},
+            {name: '字典数据管理.批量删除字典数据', url: 'cn_enjoy_sys_controller_DictController.html#batchDeleteDictData'},
+            {name: '字典数据管理.新增字典数据', url: 'cn_enjoy_sys_controller_DictController.html#addDictData'},
+            {name: '字典数据管理.查询字典详情', url: 'cn_enjoy_sys_controller_DictController.html#detailDictData'},
+            {name: '字典数据管理.修改字典数据', url: 'cn_enjoy_sys_controller_DictController.html#updateDictData'},
+            {name: '字典数据管理.删除字典数据', url: 'cn_enjoy_sys_controller_DictController.html#deleteDictData'},
+            {name: '字典数据管理.冻结字典数据', url: 'cn_enjoy_sys_controller_DictController.html#freezeDictData'},
+            {name: '字典表类型管理.查询字典类型列表', url: 'cn_enjoy_sys_controller_DictTypeController.html#queryAllDictTypePage'},
+            {name: '字典表类型管理.删除字典类型', url: 'cn_enjoy_sys_controller_DictTypeController.html#batchDeleteDictType'},
+            {name: '字典表类型管理.新增字典类型', url: 'cn_enjoy_sys_controller_DictTypeController.html#addDictType'},
+            {name: '字典表类型管理.查询字典类型详情', url: 'cn_enjoy_sys_controller_DictTypeController.html#detailDictType'},
+            {name: '字典表类型管理.删除字典类型', url: 'cn_enjoy_sys_controller_DictTypeController.html#deleteDictType'},
+            {name: '字典表类型管理.修改字典类型', url: 'cn_enjoy_sys_controller_DictTypeController.html#updateDictType'},
+            {name: '字典表类型管理.冻结字典类型', url: 'cn_enjoy_sys_controller_DictTypeController.html#freezeDictType'},
+            {name: '登录管理.获取登录用户的菜单信息', url: 'cn_enjoy_sys_controller_LoginController.html#getLoginResource'},
+            {name: '登录管理.获取图片服务器的地址', url: 'cn_enjoy_sys_controller_LoginController.html#getFileServerUrl'},
+            {name: '登录管理.没有登录', url: 'cn_enjoy_sys_controller_LoginController.html#unLogin'},
+            {name: '登录管理.没有权限,请重新登陆', url: 'cn_enjoy_sys_controller_LoginController.html#accessDenied'},
+            {name: '登录管理.已经登陆成功', url: 'cn_enjoy_sys_controller_LoginController.html#logined'},
+            {name: '登录管理.用户登录接口', url: 'cn_enjoy_sys_controller_LoginController.html#toLogin'},
+            {name: '登录管理.用户登出接口', url: 'cn_enjoy_sys_controller_LoginController.html#logout'},
+            {name: '登录管理.根据父菜单id获取菜单信息', url: 'cn_enjoy_sys_controller_LoginController.html#getResourceByParentId'},
+            {name: 'PersonalController.getPersonInfo', url: 'cn_enjoy_sys_controller_PersonalController.html#getPersonInfo'},
+            {name: 'PersonalController.updatePersonalInfo', url: 'cn_enjoy_sys_controller_PersonalController.html#updatePersonalInfo'},
+            {name: 'PersonalController.updateUserInfo', url: 'cn_enjoy_sys_controller_PersonalController.html#updateUserInfo'},
+            {name: '权限菜单管理.新增菜单', url: 'cn_enjoy_sys_controller_ResourceController.html#addResource'},
+            {name: '权限菜单管理.查询菜单列表', url: 'cn_enjoy_sys_controller_ResourceController.html#queryResourcePage'},
+            {name: '权限菜单管理.查询菜单树', url: 'cn_enjoy_sys_controller_ResourceController.html#queryResourceTree'},
+            {name: '权限菜单管理.删除菜单', url: 'cn_enjoy_sys_controller_ResourceController.html#delete'},
+            {name: '权限菜单管理.更新菜单', url: 'cn_enjoy_sys_controller_ResourceController.html#update'},
+            {name: '权限菜单管理.获取下拉框菜单数据', url: 'cn_enjoy_sys_controller_ResourceController.html#getResourceOptions'},
+            {name: '权限菜单管理.批量删除菜单', url: 'cn_enjoy_sys_controller_ResourceController.html#batchDelete'},
+            {name: '角色管理.新增角色', url: 'cn_enjoy_sys_controller_RoleController.html#addRole'},
+            {name: '角色管理.查询角色列表', url: 'cn_enjoy_sys_controller_RoleController.html#searchRole'},
+            {name: '角色管理.删除角色', url: 'cn_enjoy_sys_controller_RoleController.html#delete'},
+            {name: '角色管理.修改角色', url: 'cn_enjoy_sys_controller_RoleController.html#update'},
+            {name: '角色管理.批量删除角色', url: 'cn_enjoy_sys_controller_RoleController.html#batchDelete'},
+            {name: '角色管理.角色详情', url: 'cn_enjoy_sys_controller_RoleController.html#detailRole'},
+            {name: '角色管理.全量查询角色列表', url: 'cn_enjoy_sys_controller_RoleController.html#queryRoleList'},
+            {name: '角色管理.根据用户id 查询角色信息', url: 'cn_enjoy_sys_controller_RoleController.html#queryRoleName'},
+            {name: '系统管理.获取工程配置信息', url: 'cn_enjoy_sys_controller_SystemController.html#getConfig'},
+            {name: '系统管理.登出接口', url: 'cn_enjoy_sys_controller_SystemController.html#logoutBySessionId'},
+            {name: 'TestController.test', url: 'cn_enjoy_sys_controller_TestController.html#test'},
+            {name: '用户管理.新增用户', url: 'cn_enjoy_sys_controller_UserController.html#addUser'},
+            {name: '用户管理.查询用户列表', url: 'cn_enjoy_sys_controller_UserController.html#searchUsers'},
+            {name: '用户管理.全量查询用户列表', url: 'cn_enjoy_sys_controller_UserController.html#searchUserList'},
+            {name: '用户管理.查询用户详细信息', url: 'cn_enjoy_sys_controller_UserController.html#detailUser'},
+            {name: '用户管理.删除用户', url: 'cn_enjoy_sys_controller_UserController.html#delete'},
+            {name: '用户管理.更新用户', url: 'cn_enjoy_sys_controller_UserController.html#update'},
+            {name: '用户管理.main', url: 'cn_enjoy_sys_controller_UserController.html#main'},
+            {name: '用户管理.批量删除用户', url: 'cn_enjoy_sys_controller_UserController.html#batchDelete'},
+            {name: '用户管理.根据用户编码查询用户信息', url: 'cn_enjoy_sys_controller_UserController.html#getUserByIdentityCode'},
+            {name: '用户管理.工时补录查询', url: 'cn_enjoy_sys_controller_UserController.html#queryTimeExtralPage'},
+            {name: '用户管理.重置密码', url: 'cn_enjoy_sys_controller_UserController.html#resetPassword'},
+            {name: '用户管理.密码修改', url: 'cn_enjoy_sys_controller_UserController.html#updatePassword'},
+            {name: '用户管理.通讯录查询', url: 'cn_enjoy_sys_controller_UserController.html#queryContactsPage'},
+            {name: '用户管理.冻结用户', url: 'cn_enjoy_sys_controller_UserController.html#freezeUser'},
+            {name: '用户管理.注册用户', url: 'cn_enjoy_sys_controller_UserController.html#register'},
+            {name: '用户管理.查询session中用户信息', url: 'cn_enjoy_sys_controller_UserController.html#getUserInfo'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

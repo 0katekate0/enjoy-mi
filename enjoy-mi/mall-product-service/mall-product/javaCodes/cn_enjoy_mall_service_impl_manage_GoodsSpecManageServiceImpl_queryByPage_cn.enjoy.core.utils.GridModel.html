@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.core.utils.GridModel</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.core.utils.GridModel implements Serializable{
+
+    private int page; //
+    private long records; //
+    private int total; //
+    private [] rows; //
+
+    public int getPage(){
+        return page;
+    }
+
+    public void setPage(int page){
+        this.page = page;
+    }
+
+    public long getRecords(){
+        return records;
+    }
+
+    public void setRecords(long records){
+        this.records = records;
+    }
+
+    public int getTotal(){
+        return total;
+    }
+
+    public void setTotal(int total){
+        this.total = total;
+    }
+
+    public [] getRows(){
+        return rows;
+    }
+
+    public void setRows([] rows){
+        this.rows = rows;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.Spec implements Serializable{
+
+    private int id; //
+    private int typeId; //
+    private String name; //
+    private int order; //
+    private boolean searchIndex; //
+    private [] specItemList; //
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getTypeId(){
+        return typeId;
+    }
+
+    public void setTypeId(int typeId){
+        this.typeId = typeId;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public int getOrder(){
+        return order;
+    }
+
+    public void setOrder(int order){
+        this.order = order;
+    }
+
+    public boolean getSearchIndex(){
+        return searchIndex;
+    }
+
+    public void setSearchIndex(boolean searchIndex){
+        this.searchIndex = searchIndex;
+    }
+
+    public [] getSpecItemList(){
+        return specItemList;
+    }
+
+    public void setSpecItemList([] specItemList){
+        this.specItemList = specItemList;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.SpecItem implements Serializable{
+
+    private int id; //
+    private int specId; //
+    private String item; //
+    private boolean checked; //
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public int getSpecId(){
+        return specId;
+    }
+
+    public void setSpecId(int specId){
+        this.specId = specId;
+    }
+
+    public String getItem(){
+        return item;
+    }
+
+    public void setItem(String item){
+        this.item = item;
+    }
+
+    public boolean getChecked(){
+        return checked;
+    }
+
+    public void setChecked(boolean checked){
+        this.checked = checked;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

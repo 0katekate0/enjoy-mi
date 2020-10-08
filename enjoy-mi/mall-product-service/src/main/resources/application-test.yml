@@ -1,0 +1,146 @@
+dfs:
+  url: 94.191.83.120:8181
+# 114.115.171.119 root Mall123!#$
+druid-master:
+  jdbcUrl: jdbc:mysql://106.52.62.38:3307/product?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+  jdbcUrl1: jdbc:mysql://106.52.62.38:3308/product?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+  username: root
+  password: root
+  driver-class-name: com.mysql.jdbc.Driver
+  minIdle: 2
+  maxActive: 10
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  validationQuery: SELECT 1 FROM DUAL
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+  filters: stat,wall
+  connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+druid-slave:
+  url: jdbc:mysql://94.191.83.120:3308/mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+  username: root
+  password: root
+  driver-class-name: com.mysql.jdbc.Driver
+  minIdle: 2
+  maxActive: 10
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  validationQuery: SELECT 1 FROM DUAL
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+  filters: stat,wall
+  connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+druid-mycat:
+  jdbcUrl: jdbc:mysql://localhost:8066/productdb?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+  #jdbcUrl1: jdbc:mysql://94.191.83.120:3308/mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+  username: enjoy
+  password: 123456
+  driver-class-name: com.mysql.jdbc.Driver
+  minIdle: 2
+  maxActive: 10
+  maxWait: 60000
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  validationQuery: SELECT 1 FROM DUAL
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  poolPreparedStatements: true
+  maxPoolPreparedStatementPerConnectionSize: 20
+  filters: stat,wall
+  connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+
+mybatis:
+  mapper-locations: classpath*:mapping/**/*.xml
+  config-location: classpath:SqlMapConfig.xml
+
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      client:
+        enabled: true
+  zipkin:
+    #base-url: http://106.55.152.41:9411/
+    sender:
+      type: kafka
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 106.52.62.38:9092
+    alibaba:
+      seata:
+        tx-service-group: pay_tx_group
+  kafka:
+    bootstrap-servers: 106.52.62.38:9092
+  redis:
+    host: 106.52.62.38
+    port: 6379
+    password: 123456
+  data:
+    mongodb:
+      uri: mongodb://94.191.83.120:27017/mall
+  datasource:
+    initialize: false
+  application:
+    name: mall-product-service
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka.h:8763/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  #instance:
+    #hostname:
+    #ip-address: 119.45.45.184
+    #prefer-ip-address: true
+    #instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 5000
+  OkToRetryOnAllOperations: false
+  MaxAutoRetriesNextServer: 0
+  MaxAutoRetries: 0
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    root: info
+    cn:
+      enjoy:
+        mall:
+          dao: debug
+    org:
+      springframework:
+        cloud:
+          sleuth: debug

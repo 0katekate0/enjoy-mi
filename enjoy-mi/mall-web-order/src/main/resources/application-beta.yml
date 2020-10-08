@@ -1,0 +1,133 @@
+dfs:
+  url: 94.191.83.120:8181
+fdfs:
+  connectTimeout: 600
+  soTimeout: 1500
+  thumbImage:
+    height: 150
+    width: 150
+  trackerList:
+    - 94.191.83.120:12050
+
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      client:
+        enabled: true
+  zipkin:
+    #base-url: http://106.55.152.41:9411/
+    sender:
+      type: kafka
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 106.52.62.38:9092
+  kafka:
+    bootstrap-servers: 106.52.62.38:9092
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 106.52.62.38
+    port: 6379
+    password: 123456
+    jedis:
+      pool:
+        max-wait: -1
+        max-active: 100
+        max-idle: 100
+        min-idle: 10
+  jmx:
+    enabled: false
+  rabbitmq:
+    host: 94.191.83.120
+    port: 5672
+    username: admin
+    password: admin
+    publisher-confirms: true
+    virtual-host: /
+  application:
+    name: mall-web-order
+  main:
+    allow-bean-definition-overriding: true
+shiro:
+  maxAge:
+    day: 10
+sso:
+  loginUrl: /api/system/unLogin
+  client-id: c1ebe466-1cdc-4bd3-ab69-77c3561b9dee
+  client-secret: d8346ea2-6017-43ed-ad68-19c0f971738b
+  access-token-url: http://mi.xiangxueketang.cn/mall-account/api/accessToken
+  user-info-url: http://mi.xiangxueketang.cn/mall-account/api/userInfo
+  redirect-url: http://mi.xiangxueketang.cn/mall-account/
+
+company:
+  images:
+    login-logo: /assets/pc/images/login-logo.png
+    logo: /assets/pc/images/logo.png
+    login-bg: /assets/pc/images/login-bg.jpg
+wx:
+    appid: wxc5eae5bf209e986f
+    appsecret:
+    redirect_uri:
+
+goods:
+  pic:
+    domain: http://demo5.tp-shop.cn
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka.h:8763/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    #hostname:
+    #ip-address: 94.191.83.120
+    prefer-ip-address: true
+    instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 40000
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 20000
+  OkToRetryOnAllOperations: false
+  MaxAutoRetriesNextServer: 1
+  MaxAutoRetries: 1
+
+feign:
+  compression:
+    request:
+      enabled: true  #开启请求压缩功能
+      mime-types: text/xml;application/xml;application/json #指定压缩请求数据类型
+      min-request-size: 2048  #如果传输超过该字节，就对其进行压缩
+    response:
+      #开启响应压缩功能
+      enabled:  true
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: debug

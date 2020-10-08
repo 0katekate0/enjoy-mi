@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>用户登录模块</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                享学课堂-小米商城项目-mall-user-service
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../mall-user-service.iml/index.html">mall-user-service.iml</a></li>
+                            <li><a href="../pom.xml/index.html">pom.xml</a></li>
+                            <li><a href="../src/index.html">src</a></li>
+                            <li><a href="../target/index.html">target</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 权限管理
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientId">
+                        验证oauth2.0客户端是否存在
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientSecret">
+                        验证oauth2.0密码是否存在
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getExpireIn">
+                        获取过期时间
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#findClientByClientId">
+                        根据客户端id获取鉴权客户端信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getClientMap">
+                        获取所有的鉴权客户端信息
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 部门管理
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#saveDepartment">
+                        保存部门
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#editDepartment">
+                        修改部门
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#loadDepartment">
+                        查询部门
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#removeDepartment">
+                        删除部门
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectDepartmentById">
+                        根据部门id查询部门
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByToTree">
+                        查询部门树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByUserId">
+                        根据用户id查询部门
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 字典数据管理
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findDictByType">
+                        根据字典类型查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByCode">
+                        根据编码查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDict">
+                        查询所有的字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDictType">
+                        查询所有的字段类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findSelectModelsByType">
+                        查询下拉框的字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByTypeAndORDER">
+                        根据类型查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryAllDictDataPage">
+                        查询字典数据列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteByIds">
+                        删除字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#addDictData">
+                        新增字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#selectByPrimaryKey">
+                        根据id查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteDictData">
+                        根据id删除字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#freezeDictData">
+                        冻结字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#updateDictData">
+                        更新字典数据
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> 字典类型
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findDictByType">
+                        根据类型查询所有的字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDict">
+                        查询所有的字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDictType">
+                        查询所有的字典类型数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findSelectModelsByType">
+                        查询下拉框式的字典类型数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryDictDataByTypeAndORDER">
+                        根据类型和排序查询字典数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryAllDictTypePage">
+                        查询字典类型列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteByIds">
+                        删除字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#addDictType">
+                        新增字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#selectByPrimaryKey">
+                        根据id查询字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteDictType">
+                        删除字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#freezeDictTyp">
+                        动静字典类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#updateDictType">
+                        更新字典类型
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> 用户登录模块
+            </div>
+            <div id="collapse4" class="collapse in " aria-labelledby="heading4">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#login">
+                        用户登录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#loginByStrToken">
+                        用户登录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#login">
+                        根据账号密码登录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#queryMenus">
+                        查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList">
+                        查询权限
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList">
+                        查询权限
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#login">
+                        账号登录
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading5" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse5" aria-controls="collapse5">
+                <i class="glyphicon glyphicon-align-justify"></i> 菜单管理
+            </div>
+            <div id="collapse5" class="collapse " aria-labelledby="heading5">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#getMenuIdByUrl">
+                        getMenuIdByUrl
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceTree">
+                        查询菜单树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryInitResourceTree">
+                        查询初始化的菜单树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceById">
+                        根据id查询菜单数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#loadResourceData">
+                        查询菜单列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#saveResource">
+                        保存菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectById">
+                        根据id查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#updateByPrimaryKey">
+                        更新菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectChildById">
+                        根据id查询子菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResource">
+                        锁住菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResourceAndChild">
+                        锁住菜单和子菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentName">
+                        下拉框式菜单数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentStatusById">
+                        查询父的状态
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#unlockResource">
+                        解锁菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceList">
+                        根据条件查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectTreeViewResource">
+                        查询菜单树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByPrimaryKey">
+                        删除菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#getResourceByUrl">
+                        根据url查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#getAllParentResourceListById">
+                        根据id查询所有的父菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectbyUserId">
+                        根据用户查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectBySysCode">
+                        根据编码查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByCode">
+                        根据编码查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByParentId">
+                        根据父id查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteById">
+                        根据id删除菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByIds">
+                        根据ids删除菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResouceIdByRoleId">
+                        根据角色id查询菜单
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading6" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse6" aria-controls="collapse6">
+                <i class="glyphicon glyphicon-align-justify"></i> 角色管理
+            </div>
+            <div id="collapse6" class="collapse " aria-labelledby="heading6">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#addDefaultRoles">
+                        新增角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#addRole">
+                        新增角色和业务模块关联
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#addRoleXA">
+                        新增角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#insertRole">
+                        新增角色和角色关联
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRole">
+                        修改角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRoleXA">
+                        修改角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteRoleById">
+                        删除角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleDetailById">
+                        查询角色详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#findRoleByResourceId">
+                        根据菜单id查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#saveInitRole">
+                        新增角色和角色菜单关联
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyInitRole">
+                        修改角色和角色菜单关联
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteInitRoleById">
+                        删除角色和角色菜单关联
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteByIds">
+                        删除角色和角色菜单关联
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleList">
+                        查询全量角色数据
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById">
+                        selectRoleById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#queryUserRoleByUserId">
+                        根据用户id查询用户角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectByRoleCode">
+                        根据角色编码查询角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById">
+                        根据主键查询角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectDefaultRole">
+                        查询默认角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRolePage">
+                        查询角色列表
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading7" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse7" aria-controls="collapse7">
+                <i class="glyphicon glyphicon-align-justify"></i> 用户地址管理
+            </div>
+            <div id="collapse7" class="collapse " aria-labelledby="heading7">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserAddressServiceImpl.html#save">
+                        保存用户地址
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserAddressServiceImpl.html#remove">
+                        删除用户地址
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserAddressServiceImpl.html#selectById">
+                        查询用户地址
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading8" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse8" aria-controls="collapse8">
+                <i class="glyphicon glyphicon-align-justify"></i> 用户管理
+            </div>
+            <div id="collapse8" class="collapse " aria-labelledby="heading8">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#addUser">
+                        新增用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole">
+                        saveUserRole
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#selectByPrimaryKey">
+                        查询用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#selectByEmail">
+                        根据email查询用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole">
+                        保存用户角色
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword">
+                        校验用户名和密码
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserPassWord">
+                        修改密码
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserForgetThePassword">
+                        忘记密码修改
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserMobile">
+                        修改用户手机号
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserEmail">
+                        修改用户邮箱
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkUniqueness">
+                        校验用户是否唯一
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#editUser">
+                        修改用户信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToFreeze">
+                        冻结用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToUnFreeze">
+                        解冻用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToCancel">
+                        关闭用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyPassword">
+                        修改密码
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword">
+                        checkUserPassword
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkMobileAndEmail">
+                        校验手机号和邮箱是否存在
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#deleteById">
+                        删除用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#deleteByIds">
+                        批量删除用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryByPage">
+                        查询用户列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryTimeExtraPage">
+                        工时补录查询
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryList">
+                        查询全量用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#update">
+                        更新用户信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#getUserByIdentityCode">
+                        根据用户编码查询用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#resetPassword">
+                        重置密码
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#freezeUser">
+                        冻结用户
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#updateUserInfo">
+                        修改用户信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#updatePassword">
+                        修改密码
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryContacts">
+                        查询用户信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#register">
+                        用户注册
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#selectByAccount">
+                        根据用户名查询用户
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="login"><a href="#">用户登录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/loginByToken</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">AuthenticationToken{}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">Map{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="loginByStrToken"><a href="#">用户登录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/loginByTokenStr</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>token</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">Map{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="login"><a href="#">根据账号密码登录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/loginByAccount</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>loginAccount</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">Map{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="queryMenus"><a href="#">查询菜单 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/queryMenus</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>userId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>parentId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"string",
+	"title":"string",
+	"icon":"string",
+	"url":"string",
+	"code":"string",
+	"children":[]
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_users_service_impl_LoginServiceImpl_queryMenus_cn.enjoy.sys.model.MenuModel.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_users_service_impl_LoginServiceImpl_queryMenus_cn.enjoy.sys.model.MenuModel.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="queryPermissionList"><a href="#">查询权限 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/queryPermissionList</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求体</strong> <span class="badge">application/json</span></p>
+        <pre class="prettyprint lang-json">{
+	"id":"string",
+	"userName":"string",
+	"password":"string",
+	"passwordRand":"string",
+	"realName":"string",
+	"mobile":"string",
+	"email":"string",
+	"orgCode":"string",
+	"identityCode":"string",
+	"sysCode":"string",
+	"status":"int",
+	"validateCode":"string",
+	"activatedTime":"date",
+	"createTime":"date",
+	"createUser":"string",
+	"updateTime":"date",
+	"updateUser":"string",
+	"birthday":"string",
+	"captcha":"string",
+	"captchaTime":"date",
+	"qq":"string",
+	"wx":"string",
+	"icon":"string",
+	"positionLevel":"string",
+	"positionLevelStr":"string",
+	"principals":"string",
+	"loginAccount":"string",
+	"roleList":[{
+		"id":"string",
+		"roleCode":"string",
+		"roleName":"string",
+		"roleDesc":"string",
+		"sysCode":"string",
+		"createTime":"date",
+		"createUser":"string",
+		"updateUser":"string",
+		"updateTime":"date",
+		"isdefault":"byte"
+	}],
+	"roleIds":"string[]",
+	"isCanLogin":"string"
+}</pre>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"string",
+	"title":"string",
+	"icon":"string",
+	"url":"string",
+	"code":"string",
+	"children":[]
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_users_service_impl_LoginServiceImpl_queryPermissionList_cn.enjoy.sys.model.MenuModel.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_users_service_impl_LoginServiceImpl_queryPermissionList_cn.enjoy.sys.model.MenuModel.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="queryPermissionList"><a href="#">查询权限 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/queryPermissionListStr</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>userStr</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"string",
+	"title":"string",
+	"icon":"string",
+	"url":"string",
+	"code":"string",
+	"children":[]
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_users_service_impl_LoginServiceImpl_queryPermissionList_cn.enjoy.sys.model.MenuModel.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_users_service_impl_LoginServiceImpl_queryPermissionList_cn.enjoy.sys.model.MenuModel.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="login"><a href="#">账号登录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/user/sys/service/ILoginService/login</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>loginAccount</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"id":"string",
+	"userName":"string",
+	"password":"string",
+	"passwordRand":"string",
+	"realName":"string",
+	"mobile":"string",
+	"email":"string",
+	"orgCode":"string",
+	"identityCode":"string",
+	"sysCode":"string",
+	"status":"int",
+	"validateCode":"string",
+	"activatedTime":"date",
+	"createTime":"date",
+	"createUser":"string",
+	"updateTime":"date",
+	"updateUser":"string",
+	"birthday":"string",
+	"captcha":"string",
+	"captchaTime":"date",
+	"qq":"string",
+	"wx":"string",
+	"icon":"string",
+	"positionLevel":"string",
+	"positionLevelStr":"string",
+	"principals":"string",
+	"loginAccount":"string",
+	"roleList":[{
+		"id":"string",
+		"roleCode":"string",
+		"roleName":"string",
+		"roleDesc":"string",
+		"sysCode":"string",
+		"createTime":"date",
+		"createUser":"string",
+		"updateUser":"string",
+		"updateTime":"date",
+		"isdefault":"byte"
+	}],
+	"roleIds":"string[]",
+	"isCanLogin":"string"
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_users_service_impl_LoginServiceImpl_login_cn.enjoy.sys.model.SysUser.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_users_service_impl_LoginServiceImpl_login_cn.enjoy.sys.model.SysUser.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '权限管理.验证oauth2.0客户端是否存在', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientId'},
+            {name: '权限管理.验证oauth2.0密码是否存在', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientSecret'},
+            {name: '权限管理.获取过期时间', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getExpireIn'},
+            {name: '权限管理.根据客户端id获取鉴权客户端信息', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#findClientByClientId'},
+            {name: '权限管理.获取所有的鉴权客户端信息', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getClientMap'},
+            {name: '部门管理.保存部门', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#saveDepartment'},
+            {name: '部门管理.修改部门', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#editDepartment'},
+            {name: '部门管理.查询部门', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#loadDepartment'},
+            {name: '部门管理.删除部门', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#removeDepartment'},
+            {name: '部门管理.根据部门id查询部门', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectDepartmentById'},
+            {name: '部门管理.查询部门树', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByToTree'},
+            {name: '部门管理.根据用户id查询部门', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByUserId'},
+            {name: '字典数据管理.根据字典类型查询字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findDictByType'},
+            {name: '字典数据管理.根据编码查询字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByCode'},
+            {name: '字典数据管理.查询所有的字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDict'},
+            {name: '字典数据管理.查询所有的字段类型', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDictType'},
+            {name: '字典数据管理.查询下拉框的字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findSelectModelsByType'},
+            {name: '字典数据管理.根据类型查询字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByTypeAndORDER'},
+            {name: '字典数据管理.查询字典数据列表', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryAllDictDataPage'},
+            {name: '字典数据管理.删除字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteByIds'},
+            {name: '字典数据管理.新增字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#addDictData'},
+            {name: '字典数据管理.根据id查询字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#selectByPrimaryKey'},
+            {name: '字典数据管理.根据id删除字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteDictData'},
+            {name: '字典数据管理.冻结字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#freezeDictData'},
+            {name: '字典数据管理.更新字典数据', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#updateDictData'},
+            {name: '字典类型.根据类型查询所有的字典数据', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findDictByType'},
+            {name: '字典类型.查询所有的字典数据', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDict'},
+            {name: '字典类型.查询所有的字典类型数据', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDictType'},
+            {name: '字典类型.查询下拉框式的字典类型数据', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findSelectModelsByType'},
+            {name: '字典类型.根据类型和排序查询字典数据', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryDictDataByTypeAndORDER'},
+            {name: '字典类型.查询字典类型列表', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryAllDictTypePage'},
+            {name: '字典类型.删除字典类型', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteByIds'},
+            {name: '字典类型.新增字典类型', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#addDictType'},
+            {name: '字典类型.根据id查询字典类型', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#selectByPrimaryKey'},
+            {name: '字典类型.删除字典类型', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteDictType'},
+            {name: '字典类型.动静字典类型', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#freezeDictTyp'},
+            {name: '字典类型.更新字典类型', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#updateDictType'},
+            {name: '用户登录模块.用户登录', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#login'},
+            {name: '用户登录模块.用户登录', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#loginByStrToken'},
+            {name: '用户登录模块.根据账号密码登录', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#login'},
+            {name: '用户登录模块.查询菜单', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#queryMenus'},
+            {name: '用户登录模块.查询权限', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList'},
+            {name: '用户登录模块.查询权限', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList'},
+            {name: '用户登录模块.账号登录', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#login'},
+            {name: '菜单管理.getMenuIdByUrl', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#getMenuIdByUrl'},
+            {name: '菜单管理.查询菜单树', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceTree'},
+            {name: '菜单管理.查询初始化的菜单树', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryInitResourceTree'},
+            {name: '菜单管理.根据id查询菜单数据', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceById'},
+            {name: '菜单管理.查询菜单列表', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#loadResourceData'},
+            {name: '菜单管理.保存菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#saveResource'},
+            {name: '菜单管理.根据id查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectById'},
+            {name: '菜单管理.更新菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#updateByPrimaryKey'},
+            {name: '菜单管理.根据id查询子菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectChildById'},
+            {name: '菜单管理.锁住菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResource'},
+            {name: '菜单管理.锁住菜单和子菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResourceAndChild'},
+            {name: '菜单管理.下拉框式菜单数据', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentName'},
+            {name: '菜单管理.查询父的状态', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentStatusById'},
+            {name: '菜单管理.解锁菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#unlockResource'},
+            {name: '菜单管理.根据条件查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceList'},
+            {name: '菜单管理.查询菜单树', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectTreeViewResource'},
+            {name: '菜单管理.删除菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByPrimaryKey'},
+            {name: '菜单管理.根据url查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#getResourceByUrl'},
+            {name: '菜单管理.根据id查询所有的父菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#getAllParentResourceListById'},
+            {name: '菜单管理.根据用户查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectbyUserId'},
+            {name: '菜单管理.根据编码查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectBySysCode'},
+            {name: '菜单管理.根据编码查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByCode'},
+            {name: '菜单管理.根据父id查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByParentId'},
+            {name: '菜单管理.根据id删除菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteById'},
+            {name: '菜单管理.根据ids删除菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByIds'},
+            {name: '菜单管理.根据角色id查询菜单', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResouceIdByRoleId'},
+            {name: '角色管理.新增角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#addDefaultRoles'},
+            {name: '角色管理.新增角色和业务模块关联', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#addRole'},
+            {name: '角色管理.新增角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#addRoleXA'},
+            {name: '角色管理.新增角色和角色关联', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#insertRole'},
+            {name: '角色管理.修改角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRole'},
+            {name: '角色管理.修改角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRoleXA'},
+            {name: '角色管理.删除角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteRoleById'},
+            {name: '角色管理.查询角色详情', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleDetailById'},
+            {name: '角色管理.根据菜单id查询菜单', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#findRoleByResourceId'},
+            {name: '角色管理.新增角色和角色菜单关联', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#saveInitRole'},
+            {name: '角色管理.修改角色和角色菜单关联', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyInitRole'},
+            {name: '角色管理.删除角色和角色菜单关联', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteInitRoleById'},
+            {name: '角色管理.删除角色和角色菜单关联', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteByIds'},
+            {name: '角色管理.查询全量角色数据', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleList'},
+            {name: '角色管理.selectRoleById', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById'},
+            {name: '角色管理.根据用户id查询用户角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#queryUserRoleByUserId'},
+            {name: '角色管理.根据角色编码查询角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectByRoleCode'},
+            {name: '角色管理.根据主键查询角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById'},
+            {name: '角色管理.查询默认角色', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectDefaultRole'},
+            {name: '角色管理.查询角色列表', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRolePage'},
+            {name: '用户地址管理.保存用户地址', url: 'cn_enjoy_users_service_impl_UserAddressServiceImpl.html#save'},
+            {name: '用户地址管理.删除用户地址', url: 'cn_enjoy_users_service_impl_UserAddressServiceImpl.html#remove'},
+            {name: '用户地址管理.查询用户地址', url: 'cn_enjoy_users_service_impl_UserAddressServiceImpl.html#selectById'},
+            {name: '用户管理.新增用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#addUser'},
+            {name: '用户管理.saveUserRole', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole'},
+            {name: '用户管理.查询用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#selectByPrimaryKey'},
+            {name: '用户管理.根据email查询用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#selectByEmail'},
+            {name: '用户管理.保存用户角色', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole'},
+            {name: '用户管理.校验用户名和密码', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword'},
+            {name: '用户管理.修改密码', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserPassWord'},
+            {name: '用户管理.忘记密码修改', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserForgetThePassword'},
+            {name: '用户管理.修改用户手机号', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserMobile'},
+            {name: '用户管理.修改用户邮箱', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserEmail'},
+            {name: '用户管理.校验用户是否唯一', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkUniqueness'},
+            {name: '用户管理.修改用户信息', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#editUser'},
+            {name: '用户管理.冻结用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToFreeze'},
+            {name: '用户管理.解冻用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToUnFreeze'},
+            {name: '用户管理.关闭用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToCancel'},
+            {name: '用户管理.修改密码', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyPassword'},
+            {name: '用户管理.checkUserPassword', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword'},
+            {name: '用户管理.校验手机号和邮箱是否存在', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkMobileAndEmail'},
+            {name: '用户管理.删除用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#deleteById'},
+            {name: '用户管理.批量删除用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#deleteByIds'},
+            {name: '用户管理.查询用户列表', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryByPage'},
+            {name: '用户管理.工时补录查询', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryTimeExtraPage'},
+            {name: '用户管理.查询全量用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryList'},
+            {name: '用户管理.更新用户信息', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#update'},
+            {name: '用户管理.根据用户编码查询用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#getUserByIdentityCode'},
+            {name: '用户管理.重置密码', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#resetPassword'},
+            {name: '用户管理.冻结用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#freezeUser'},
+            {name: '用户管理.修改用户信息', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#updateUserInfo'},
+            {name: '用户管理.修改密码', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#updatePassword'},
+            {name: '用户管理.查询用户信息', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryContacts'},
+            {name: '用户管理.用户注册', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#register'},
+            {name: '用户管理.根据用户名查询用户', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#selectByAccount'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

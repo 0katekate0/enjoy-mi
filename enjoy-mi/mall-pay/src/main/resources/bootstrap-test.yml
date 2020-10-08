@@ -1,0 +1,174 @@
+dfs:
+  url: 94.191.83.120:8181
+
+
+#wx:
+#  appId: wx59a7e2633f445ef7
+#  mchId: 1534472621
+#  key: f4b7a6885e121bd8cbc1664ceabf5cce
+#  certPath:
+#  notify_url: http://thesunbig.imwork.net/wx/notify
+#  wap_url: https://pay.qq.com
+#  spbill_create_ip: 127.0.0.1
+
+zookeeper:
+  url: zookeeper://94.191.83.120:2181
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      client:
+        enabled: true
+  zipkin:
+    #base-url: http://106.55.152.41:9411/
+    sender:
+      type: kafka
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: 106.52.62.38:9092
+    config:
+      profile:
+      label: master
+      #连单机configserver
+      #uri: http://localhost:8085/
+      discovery:
+        enabled: true
+        service-id: mall-config
+      fail-fast: true
+      retry:
+        multiplier: 1.1
+        initial-interval: 1000
+        max-interval: 2000
+        max-attempts: 6
+    bus:
+      refresh:
+        enabled: true
+    alibaba:
+      seata:
+        tx-service-group: pay_tx_group
+  kafka:
+    bootstrap-servers: 106.52.62.38:9092
+  application:
+    name: mall-pay-service
+  rabbitmq:
+    host: 94.191.83.120
+    port: 5672
+    username: admin
+    password: admin
+    publisher-confirms: true
+    virtual-host: /
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka.h:8763/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  #instance:
+    #hostname:
+    #ip-address: 94.191.83.120
+    #prefer-ip-address: true
+    #instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 40000
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 20000
+  OkToRetryOnAllOperations: false
+  MaxAutoRetriesNextServer: 1
+  MaxAutoRetries: 1
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#seata:
+#  enabled: true
+#  application-id: mall-pay
+#  tx-service-group: pay_tx_group
+#  enable-auto-data-source-proxy: true
+#  use-jdk-proxy: false
+#  excludes-for-auto-proxying: firstClassNameForExclude,secondClassNameForExclude
+#  client:
+#    rm:
+#      async-commit-buffer-limit: 1000
+#      report-retry-count: 5
+#      table-meta-check-enable: false
+#      report-success-enable: false
+#      saga-branch-register-enable: false
+#      lock:
+#        retry-interval: 10
+#        retry-times: 30
+#        retry-policy-branch-rollback-on-conflict: true
+#    tm:
+#      degrade-check: false
+#      degrade-check-period: 2000
+#      degrade-check-allow-times: 10
+#      commit-retry-count: 5
+#      rollback-retry-count: 5
+#    undo:
+#      data-validation: true
+#      log-serialization: jackson
+#      log-table: undo_log
+#      only-care-update-columns: true
+#    log:
+#      exceptionRate: 100
+##  service:
+##    vgroup-mapping:
+##      pay_tx_group: default
+##    grouplist:
+##      default: 127.0.0.1:8091
+##    enable-degrade: false
+##    disable-global-transaction: false
+#  transport:
+#    shutdown:
+#      wait: 3
+#    thread-factory:
+#      boss-thread-prefix: NettyBoss
+#      worker-thread-prefix: NettyServerNIOWorker
+#      server-executor-thread-prefix: NettyServerBizHandler
+#      share-boss-worker: false
+#      client-selector-thread-prefix: NettyClientSelector
+#      client-selector-thread-size: 1
+#      client-worker-thread-prefix: NettyClientWorkerThread
+#      worker-thread-size: default
+#      boss-thread-size: 1
+#    type: TCP
+#    server: NIO
+#    heartbeat: true
+#    serialization: seata
+#    compressor: none
+#    enable-client-batch-send-request: true
+#  config:
+#    type: file
+#  registry:
+#    redis:
+#      server-addr: 106.52.62.38:6379
+#      db: 0
+#      password: 123456
+#      timeout: 0
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: debug

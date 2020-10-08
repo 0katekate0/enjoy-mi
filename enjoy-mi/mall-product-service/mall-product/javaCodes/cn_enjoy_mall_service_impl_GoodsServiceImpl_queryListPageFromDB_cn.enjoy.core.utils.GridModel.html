@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.core.utils.GridModel</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.core.utils.GridModel implements Serializable{
+
+    private int page; //
+    private long records; //
+    private int total; //
+    private [] rows; //
+
+    public int getPage(){
+        return page;
+    }
+
+    public void setPage(int page){
+        this.page = page;
+    }
+
+    public long getRecords(){
+        return records;
+    }
+
+    public void setRecords(long records){
+        this.records = records;
+    }
+
+    public int getTotal(){
+        return total;
+    }
+
+    public void setTotal(int total){
+        this.total = total;
+    }
+
+    public [] getRows(){
+        return rows;
+    }
+
+    public void setRows([] rows){
+        this.rows = rows;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.Goods implements Serializable{
+
+    private int goodsId; //
+    private int catId; //
+    private int extendCatId; //
+    private String goodsSn; //
+    private String goodsName; //
+    private int clickCount; //
+    private short brandId; //
+    private short storeCount; //
+    private short commentCount; //
+    private int weight; //
+    private double marketPrice; //
+    private double shopPrice; //
+    private double costPrice; //
+    private String keywords; //
+    private String goodsRemark; //
+    private String originalImg; //
+    private boolean isReal; //
+    private boolean isOnSale; //
+    private boolean isFreeShipping; //
+    private int onTime; //
+    private short sort; //
+    private boolean isRecommend; //
+    private boolean isNew; //
+    private boolean isHot; //
+    private int lastUpdate; //
+    private short goodsType; //
+    private short specType; //
+    private int giveIntegral; //
+    private int exchangeIntegral; //
+    private short suppliersId; //
+    private int salesSum; //
+    private boolean promType; //
+    private int promId; //
+    private double commission; //
+    private String spu; //
+    private String sku; //
+    private String shippingAreaIds; //
+    private String goodsContent; //
+    private String catName; //
+    private String catParentIdPath; //
+
+    public int getGoodsId(){
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId){
+        this.goodsId = goodsId;
+    }
+
+    public int getCatId(){
+        return catId;
+    }
+
+    public void setCatId(int catId){
+        this.catId = catId;
+    }
+
+    public int getExtendCatId(){
+        return extendCatId;
+    }
+
+    public void setExtendCatId(int extendCatId){
+        this.extendCatId = extendCatId;
+    }
+
+    public String getGoodsSn(){
+        return goodsSn;
+    }
+
+    public void setGoodsSn(String goodsSn){
+        this.goodsSn = goodsSn;
+    }
+
+    public String getGoodsName(){
+        return goodsName;
+    }
+
+    public void setGoodsName(String goodsName){
+        this.goodsName = goodsName;
+    }
+
+    public int getClickCount(){
+        return clickCount;
+    }
+
+    public void setClickCount(int clickCount){
+        this.clickCount = clickCount;
+    }
+
+    public short getBrandId(){
+        return brandId;
+    }
+
+    public void setBrandId(short brandId){
+        this.brandId = brandId;
+    }
+
+    public short getStoreCount(){
+        return storeCount;
+    }
+
+    public void setStoreCount(short storeCount){
+        this.storeCount = storeCount;
+    }
+
+    public short getCommentCount(){
+        return commentCount;
+    }
+
+    public void setCommentCount(short commentCount){
+        this.commentCount = commentCount;
+    }
+
+    public int getWeight(){
+        return weight;
+    }
+
+    public void setWeight(int weight){
+        this.weight = weight;
+    }
+
+    public double getMarketPrice(){
+        return marketPrice;
+    }
+
+    public void setMarketPrice(double marketPrice){
+        this.marketPrice = marketPrice;
+    }
+
+    public double getShopPrice(){
+        return shopPrice;
+    }
+
+    public void setShopPrice(double shopPrice){
+        this.shopPrice = shopPrice;
+    }
+
+    public double getCostPrice(){
+        return costPrice;
+    }
+
+    public void setCostPrice(double costPrice){
+        this.costPrice = costPrice;
+    }
+
+    public String getKeywords(){
+        return keywords;
+    }
+
+    public void setKeywords(String keywords){
+        this.keywords = keywords;
+    }
+
+    public String getGoodsRemark(){
+        return goodsRemark;
+    }
+
+    public void setGoodsRemark(String goodsRemark){
+        this.goodsRemark = goodsRemark;
+    }
+
+    public String getOriginalImg(){
+        return originalImg;
+    }
+
+    public void setOriginalImg(String originalImg){
+        this.originalImg = originalImg;
+    }
+
+    public boolean getIsReal(){
+        return isReal;
+    }
+
+    public void setIsReal(boolean isReal){
+        this.isReal = isReal;
+    }
+
+    public boolean getIsOnSale(){
+        return isOnSale;
+    }
+
+    public void setIsOnSale(boolean isOnSale){
+        this.isOnSale = isOnSale;
+    }
+
+    public boolean getIsFreeShipping(){
+        return isFreeShipping;
+    }
+
+    public void setIsFreeShipping(boolean isFreeShipping){
+        this.isFreeShipping = isFreeShipping;
+    }
+
+    public int getOnTime(){
+        return onTime;
+    }
+
+    public void setOnTime(int onTime){
+        this.onTime = onTime;
+    }
+
+    public short getSort(){
+        return sort;
+    }
+
+    public void setSort(short sort){
+        this.sort = sort;
+    }
+
+    public boolean getIsRecommend(){
+        return isRecommend;
+    }
+
+    public void setIsRecommend(boolean isRecommend){
+        this.isRecommend = isRecommend;
+    }
+
+    public boolean getIsNew(){
+        return isNew;
+    }
+
+    public void setIsNew(boolean isNew){
+        this.isNew = isNew;
+    }
+
+    public boolean getIsHot(){
+        return isHot;
+    }
+
+    public void setIsHot(boolean isHot){
+        this.isHot = isHot;
+    }
+
+    public int getLastUpdate(){
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(int lastUpdate){
+        this.lastUpdate = lastUpdate;
+    }
+
+    public short getGoodsType(){
+        return goodsType;
+    }
+
+    public void setGoodsType(short goodsType){
+        this.goodsType = goodsType;
+    }
+
+    public short getSpecType(){
+        return specType;
+    }
+
+    public void setSpecType(short specType){
+        this.specType = specType;
+    }
+
+    public int getGiveIntegral(){
+        return giveIntegral;
+    }
+
+    public void setGiveIntegral(int giveIntegral){
+        this.giveIntegral = giveIntegral;
+    }
+
+    public int getExchangeIntegral(){
+        return exchangeIntegral;
+    }
+
+    public void setExchangeIntegral(int exchangeIntegral){
+        this.exchangeIntegral = exchangeIntegral;
+    }
+
+    public short getSuppliersId(){
+        return suppliersId;
+    }
+
+    public void setSuppliersId(short suppliersId){
+        this.suppliersId = suppliersId;
+    }
+
+    public int getSalesSum(){
+        return salesSum;
+    }
+
+    public void setSalesSum(int salesSum){
+        this.salesSum = salesSum;
+    }
+
+    public boolean getPromType(){
+        return promType;
+    }
+
+    public void setPromType(boolean promType){
+        this.promType = promType;
+    }
+
+    public int getPromId(){
+        return promId;
+    }
+
+    public void setPromId(int promId){
+        this.promId = promId;
+    }
+
+    public double getCommission(){
+        return commission;
+    }
+
+    public void setCommission(double commission){
+        this.commission = commission;
+    }
+
+    public String getSpu(){
+        return spu;
+    }
+
+    public void setSpu(String spu){
+        this.spu = spu;
+    }
+
+    public String getSku(){
+        return sku;
+    }
+
+    public void setSku(String sku){
+        this.sku = sku;
+    }
+
+    public String getShippingAreaIds(){
+        return shippingAreaIds;
+    }
+
+    public void setShippingAreaIds(String shippingAreaIds){
+        this.shippingAreaIds = shippingAreaIds;
+    }
+
+    public String getGoodsContent(){
+        return goodsContent;
+    }
+
+    public void setGoodsContent(String goodsContent){
+        this.goodsContent = goodsContent;
+    }
+
+    public String getCatName(){
+        return catName;
+    }
+
+    public void setCatName(String catName){
+        this.catName = catName;
+    }
+
+    public String getCatParentIdPath(){
+        return catParentIdPath;
+    }
+
+    public void setCatParentIdPath(String catParentIdPath){
+        this.catParentIdPath = catParentIdPath;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

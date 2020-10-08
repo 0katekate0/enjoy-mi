@@ -1,0 +1,169 @@
+spring:
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      client:
+        enabled: true
+  zipkin:
+    #base-url: http://106.55.152.41:9411/
+    sender:
+      type: kafka
+  application:
+    name: api-gateway
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    loadbalancer:
+      retry:
+        enabled: false
+    stream:
+      kafka:
+        binder:
+          brokers: 106.52.62.38:9092
+    config:
+      profile:
+      label: master
+      #连单机configserver
+      #uri: http://localhost:8085/
+      discovery:
+        enabled: true
+        service-id: mall-config
+      fail-fast: true
+      retry:
+        multiplier: 1.1
+        initial-interval: 1000
+        max-interval: 2000
+        max-attempts: 6
+    bus:
+      refresh:
+        enabled: true
+  kafka:
+    bootstrap-servers: 106.52.62.38:9092
+#  rabbitmq:
+#    host: 94.191.83.120
+#    port: 5672
+#    username: admin
+#    password: admin
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka.h:8763/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  #instance:
+    #hostname:
+    #ip-address: 94.191.83.120
+    #prefer-ip-address: true
+    #instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 40000
+#          #信号量
+#          strategy: SEMAPHORE
+#          semaphore:
+#            # semaphore应该占整个容器（tomcat）的线程池的一小部分。
+#            maxConcurrentRequests: 800
+#      fallback:
+#        isolation:
+#          semaphore:
+#            # 只在信号量隔离策略中有效，建议设置大一些，这样并发数达到execution最大请求数时，会直接调用fallback，而并发数达到fallback最大请求数时会被拒绝和抛出异常。
+#            maxConcurrentRequests: 1000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 100000
+
+feign:
+  compression:
+    request:
+      enabled: true  #开启请求压缩功能
+      mime-types: text/xml;application/xml;application/json #指定压缩请求数据类型
+      min-request-size: 2048  #如果传输超过该字节，就对其进行压缩
+    response:
+      #开启响应压缩功能
+      enabled:  true
+
+ribbon:
+  ConnectTimeout: 1000
+  ReadTimeout: 20000
+  OkToRetryOnAllOperations: false
+  #MaxAutoRetriesNextServer: 1
+  #MaxAutoRetries: 1
+  #每个host的最大连接数
+  #MaxConnectionsPerHost: 3000
+  #ribbon的最大连接数
+  #MaxTotalConnections: 6000
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#zuul:
+#  thread-pool:
+#    #每个路由使用独立的线程池
+#    use-separate-thread-pools: true
+#    #zuul默认采用信号量隔离策略
+#    #设置Hystrix隔离策略为线程池
+#    thread-pool-key-prefix: enjoy-
+#    default:
+#      coreSize: 300
+#      maximumSize: 400
+#      allowMaximumSizeToDivergeFromCoreSize: true
+#      maxQueueSize: -1
+#  ribbon-isolation-strategy: thread
+#  routes:
+#    mall-web-order:
+#      path: /mall/**
+#      serviceId: mall-web-order
+#      sensitive-headers:
+#    mall-web-mng:
+#      path: /mall-mng/**
+#      serviceId: mall-mng
+#      sensitive-headers:
+#    mall-user-service:
+#      path: /user/**
+#      serviceId: mall-user-service
+#      sensitive-headers:
+#    mall-product-service:
+#      path: /product/**
+#      serviceId: mall-product-service
+#      sensitive-headers:
+#    mall-order-service:
+#      path: /order/**
+#      serviceId: mall-order-service
+#      sensitive-headers:
+#      retryable: false
+#    mall-account:
+#      path: /account/**
+#      serviceId: mall-account
+#      sensitive-headers:
+#    mall-pay:
+#      path: /pay/**
+#      serviceId: mall-pay-service
+#      sensitive-headers:
+#  add-host-header: true
+#  add-proxy-headers: true
+#  retryable: false
+#  host:
+#    #每个route可用的最大连接数
+#    max-per-route-connections: 300
+#    #每个服务的http客户端连接池最大连接
+#    max-total-connections: 1000
+#  semaphore:
+#    max-semaphores: 100
+

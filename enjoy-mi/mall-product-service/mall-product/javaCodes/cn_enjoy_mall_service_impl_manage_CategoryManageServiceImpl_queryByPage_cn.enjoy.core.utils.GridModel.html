@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.core.utils.GridModel</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.core.utils.GridModel implements Serializable{
+
+    private int page; //
+    private long records; //
+    private int total; //
+    private [] rows; //
+
+    public int getPage(){
+        return page;
+    }
+
+    public void setPage(int page){
+        this.page = page;
+    }
+
+    public long getRecords(){
+        return records;
+    }
+
+    public void setRecords(long records){
+        this.records = records;
+    }
+
+    public int getTotal(){
+        return total;
+    }
+
+    public void setTotal(int total){
+        this.total = total;
+    }
+
+    public [] getRows(){
+        return rows;
+    }
+
+    public void setRows([] rows){
+        this.rows = rows;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.GoodsCategory implements Serializable{
+
+    private int id; //
+    private String name; //
+    private String mobileName; //
+    private int parentId; //
+    private String parentIdPath; //
+    private short level; //
+    private short sortOrder; //
+    private boolean isShow; //
+    private String image; //
+    private boolean isHot; //
+    private boolean catGroup; //
+    private boolean commissionRate; //
+
+    public int getId(){
+        return id;
+    }
+
+    public void setId(int id){
+        this.id = id;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getMobileName(){
+        return mobileName;
+    }
+
+    public void setMobileName(String mobileName){
+        this.mobileName = mobileName;
+    }
+
+    public int getParentId(){
+        return parentId;
+    }
+
+    public void setParentId(int parentId){
+        this.parentId = parentId;
+    }
+
+    public String getParentIdPath(){
+        return parentIdPath;
+    }
+
+    public void setParentIdPath(String parentIdPath){
+        this.parentIdPath = parentIdPath;
+    }
+
+    public short getLevel(){
+        return level;
+    }
+
+    public void setLevel(short level){
+        this.level = level;
+    }
+
+    public short getSortOrder(){
+        return sortOrder;
+    }
+
+    public void setSortOrder(short sortOrder){
+        this.sortOrder = sortOrder;
+    }
+
+    public boolean getIsShow(){
+        return isShow;
+    }
+
+    public void setIsShow(boolean isShow){
+        this.isShow = isShow;
+    }
+
+    public String getImage(){
+        return image;
+    }
+
+    public void setImage(String image){
+        this.image = image;
+    }
+
+    public boolean getIsHot(){
+        return isHot;
+    }
+
+    public void setIsHot(boolean isHot){
+        this.isHot = isHot;
+    }
+
+    public boolean getCatGroup(){
+        return catGroup;
+    }
+
+    public void setCatGroup(boolean catGroup){
+        this.catGroup = catGroup;
+    }
+
+    public boolean getCommissionRate(){
+        return commissionRate;
+    }
+
+    public void setCommissionRate(boolean commissionRate){
+        this.commissionRate = commissionRate;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

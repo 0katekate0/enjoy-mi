@@ -1,0 +1,77 @@
+spring:
+  application:
+    name: mall-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://e.coding.net/xiangxueman/mall-config-repo.git
+          search-paths: mall
+          username: 2181935941@qq.com
+          password: XKcs_0731@123)$3
+          #强制从GitHub配置中心中拉取配置信息，不走缓存
+          force-pull: true
+    stream:
+      kafka:
+        binder:
+          brokers: 106.52.62.38:9092
+    bus:
+      refresh:
+        enabled: true
+  sleuth:
+    sampler:
+      percentage: 1.0
+    web:
+      client:
+        enabled: true
+  zipkin:
+    #base-url: http://106.55.152.41:9411/
+    sender:
+      type: kafka
+  kafka:
+    bootstrap-servers: 106.52.62.38:9092
+    consumer:
+      group-id: config-bus
+#  rabbitmq:
+#    host: 94.191.83.120
+#    port: 5672
+#    username: admin
+#    password: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka.h:8763/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  #instance:
+    #hostname:
+    #ip-address: 94.191.83.120
+    #prefer-ip-address: true
+    #instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#keytool -genkeypair -alias mall-config -keyalg RSA -keystore mall-config.keystore-local -validity 365
+encrypt:
+  key-store:
+    location: mall-config.keystore
+    alias: mall-config
+    password: 123456
+    secret: 123456
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          sleuth: debug

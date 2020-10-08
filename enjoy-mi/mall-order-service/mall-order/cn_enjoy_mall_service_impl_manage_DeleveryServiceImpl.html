@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>发货物流管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                享学课堂-小米商城项目-mall-order-service
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../logs/index.html">logs</a></li>
+                            <li><a href="../mall-order-service.iml/index.html">mall-order-service.iml</a></li>
+                            <li><a href="../pom.xml/index.html">pom.xml</a></li>
+                            <li><a href="../src/index.html">src</a></li>
+                            <li><a href="../target/index.html">target</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 订单日志
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#save">
+                        保存订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#savePre">
+                        保存预支付订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#savePre">
+                        seata保存预支付订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#updatePre">
+                        修改预支付订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#save">
+                        保存订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#queryByPrepayId">
+                        根据prepayId查询订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#queryByOrderId">
+                        根据订单Id查询订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#queryByActionId">
+                        根据主键查询订单日志
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#queryOrderByUserId">
+                        根据用户id查询订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#createOrder">
+                        新建订单记录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#searchListPage">
+                        分页查询订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#selectOrderDetail">
+                        查询订单详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#selectMyOrderDetail">
+                        查询订单详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#cancel">
+                        取消订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#selfCancel">
+                        自动取消订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#autoCancelExpiredOrder">
+                        自动取消过期订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#queryOrderNum">
+                        查询各类型的订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#confirmReceiveGoods">
+                        确认收货接口
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#updateOrder">
+                        seata修改订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_OrderServiceImpl.html#setValues">
+                        setValues
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 支付管理
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#doPrePay">
+                        微信预支付
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#updateByActionId">
+                        根据主键修改订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#updateStatusByActionId">
+                        seata修改订单和订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#doPay">
+                        支付校验
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_PayServiceImpl.html#queryByPrepayId">
+                        校验是否支付成功
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> 购物车管理
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#save">
+                        添加商品到购物车
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#remove">
+                        从购物车中移除
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#removeAll">
+                        移除购物车中的所有商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#list">
+                        查询用户购物车中的商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#findBySpecGoodsId">
+                        根据specGoodsId从购物车中查询商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#updateStatus">
+                        修改购物车中的状态
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#findCheckedGoodsList">
+                        获取购物车中选中的商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#removeCheckedGoodsList">
+                        清除购物车内容
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> 发货物流管理
+            </div>
+            <div id="collapse4" class="collapse in " aria-labelledby="heading4">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_DeleveryServiceImpl.html#queryDeliveryDocByOrderId">
+                        查询发货信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_DeleveryServiceImpl.html#shipping">
+                        保存发货信息
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading5" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse5" aria-controls="collapse5">
+                <i class="glyphicon glyphicon-align-justify"></i> 订单管理
+            </div>
+            <div id="collapse5" class="collapse " aria-labelledby="heading5">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#queryByPage">
+                        查询订单列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#queryOrderDetail">
+                        查询订单详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#save">
+                        save
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#delete">
+                        delete
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#deleteByIds">
+                        deleteByIds
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#selectGoodsByOrderId">
+                        查询订单商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#update">
+                        修改订单记录
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading6" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse6" aria-controls="collapse6">
+                <i class="glyphicon glyphicon-align-justify"></i> 查询发货信息
+            </div>
+            <div id="collapse6" class="collapse " aria-labelledby="heading6">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_ShippingServiceImpl.html#queryAll">
+                        查询发货信息
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="queryDeliveryDocByOrderId"><a href="#">查询发货信息 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/order/mall/service/manage/IDeliveryService/queryDeliveryDocByOrderId</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>orderId</td>
+                        <td>long</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"int",
+	"orderId":"long",
+	"orderSn":"string",
+	"userId":"string",
+	"adminId":"string",
+	"consignee":"string",
+	"zipcode":"string",
+	"mobile":"string",
+	"country":"int",
+	"province":"int",
+	"city":"int",
+	"district":"int",
+	"address":"string",
+	"shippingCode":"string",
+	"shippingName":"string",
+	"shippingPrice":"double",
+	"invoiceNo":"string",
+	"tel":"string",
+	"bestTime":"int",
+	"createTime":"int",
+	"isDel":"boolean",
+	"note":"string"
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_mall_service_impl_manage_DeleveryServiceImpl_queryDeliveryDocByOrderId_cn.enjoy.mall.model.DeliveryDoc.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_mall_service_impl_manage_DeleveryServiceImpl_queryDeliveryDocByOrderId_cn.enjoy.mall.model.DeliveryDoc.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="shipping"><a href="#">保存发货信息 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/order/mall/service/manage/IDeliveryService/shipping</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>deliveryDocStr</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>orderGoodsIds</td>
+                        <td>long[]</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '订单日志.保存订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#save'},
+            {name: '订单日志.保存预支付订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#savePre'},
+            {name: '订单日志.seata保存预支付订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#savePre'},
+            {name: '订单日志.setValues', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#setValues'},
+            {name: '订单日志.修改预支付订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#updatePre'},
+            {name: '订单日志.保存订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#save'},
+            {name: '订单日志.根据prepayId查询订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#queryByPrepayId'},
+            {name: '订单日志.根据订单Id查询订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#queryByOrderId'},
+            {name: '订单日志.根据主键查询订单日志', url: 'cn_enjoy_mall_service_impl_OrderActionServiceImpl.html#queryByActionId'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.根据用户id查询订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#queryOrderByUserId'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.新建订单记录', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#createOrder'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.分页查询订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#searchListPage'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.查询订单详情', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#selectOrderDetail'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.查询订单详情', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#selectMyOrderDetail'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.取消订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#cancel'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.自动取消订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#selfCancel'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.自动取消过期订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#autoCancelExpiredOrder'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.查询各类型的订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#queryOrderNum'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.确认收货接口', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#confirmReceiveGoods'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.seata修改订单', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#updateOrder'},
+            {name: '订单管理
+0|0|0 待支付
+0|0|1 已付款待配货
+1|0|1 已配货待出库
+1|1|1 待收货
+2|1|1 已完成
+4|1|1 已完成.setValues', url: 'cn_enjoy_mall_service_impl_OrderServiceImpl.html#setValues'},
+            {name: '支付管理.微信预支付', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#doPrePay'},
+            {name: '支付管理.根据主键修改订单日志', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#updateByActionId'},
+            {name: '支付管理.seata修改订单和订单日志', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#updateStatusByActionId'},
+            {name: '支付管理.setValues', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#setValues'},
+            {name: '支付管理.setValues', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#setValues'},
+            {name: '支付管理.支付校验', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#doPay'},
+            {name: '支付管理.校验是否支付成功', url: 'cn_enjoy_mall_service_impl_PayServiceImpl.html#queryByPrepayId'},
+            {name: '购物车管理.添加商品到购物车', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#save'},
+            {name: '购物车管理.从购物车中移除', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#remove'},
+            {name: '购物车管理.移除购物车中的所有商品', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#removeAll'},
+            {name: '购物车管理.查询用户购物车中的商品', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#list'},
+            {name: '购物车管理.根据specGoodsId从购物车中查询商品', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#findBySpecGoodsId'},
+            {name: '购物车管理.修改购物车中的状态', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#updateStatus'},
+            {name: '购物车管理.获取购物车中选中的商品', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#findCheckedGoodsList'},
+            {name: '购物车管理.清除购物车内容', url: 'cn_enjoy_mall_service_impl_ShoppingCartServiceImpl.html#removeCheckedGoodsList'},
+            {name: '发货物流管理.查询发货信息', url: 'cn_enjoy_mall_service_impl_manage_DeleveryServiceImpl.html#queryDeliveryDocByOrderId'},
+            {name: '发货物流管理.保存发货信息', url: 'cn_enjoy_mall_service_impl_manage_DeleveryServiceImpl.html#shipping'},
+            {name: '订单管理.查询订单列表', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#queryByPage'},
+            {name: '订单管理.查询订单详情', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#queryOrderDetail'},
+            {name: '订单管理.save', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#save'},
+            {name: '订单管理.delete', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#delete'},
+            {name: '订单管理.deleteByIds', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#deleteByIds'},
+            {name: '订单管理.查询订单商品', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#selectGoodsByOrderId'},
+            {name: '订单管理.修改订单记录', url: 'cn_enjoy_mall_service_impl_manage_OrderManageServiceImpl.html#update'},
+            {name: '查询发货信息.查询发货信息', url: 'cn_enjoy_mall_service_impl_manage_ShippingServiceImpl.html#queryAll'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

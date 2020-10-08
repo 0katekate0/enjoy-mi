@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.mall.vo.GoodsDetailVo</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.vo.GoodsDetailVo : NSObject
+
+//
+@property (nonatomic, strong) unknow base;
+//
+@property (nonatomic, strong) [] imageList;
+//
+@property (nonatomic, strong) [] attrsList;
+//
+@property (nonatomic, strong) [] specGoodsPriceList;
+//
+@property (nonatomic, strong) [] typeGoodsAttributeList;
+//
+@property (nonatomic, strong) [] typeSpecList;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.Goods : NSObject
+
+//
+@property (nonatomic, strong) NSInteger goodsId;
+//
+@property (nonatomic, strong) NSInteger catId;
+//
+@property (nonatomic, strong) NSInteger extendCatId;
+//
+@property (nonatomic, assign) NSString goodsSn;
+//
+@property (nonatomic, assign) NSString goodsName;
+//
+@property (nonatomic, strong) NSInteger clickCount;
+//
+@property (nonatomic, strong) short brandId;
+//
+@property (nonatomic, strong) short storeCount;
+//
+@property (nonatomic, strong) short commentCount;
+//
+@property (nonatomic, strong) NSInteger weight;
+//
+@property (nonatomic, strong) double marketPrice;
+//
+@property (nonatomic, strong) double shopPrice;
+//
+@property (nonatomic, strong) double costPrice;
+//
+@property (nonatomic, assign) NSString keywords;
+//
+@property (nonatomic, assign) NSString goodsRemark;
+//
+@property (nonatomic, assign) NSString originalImg;
+//
+@property (nonatomic, strong) BOOL isReal;
+//
+@property (nonatomic, strong) BOOL isOnSale;
+//
+@property (nonatomic, strong) BOOL isFreeShipping;
+//
+@property (nonatomic, strong) NSInteger onTime;
+//
+@property (nonatomic, strong) short sort;
+//
+@property (nonatomic, strong) BOOL isRecommend;
+//
+@property (nonatomic, strong) BOOL isNew;
+//
+@property (nonatomic, strong) BOOL isHot;
+//
+@property (nonatomic, strong) NSInteger lastUpdate;
+//
+@property (nonatomic, strong) short goodsType;
+//
+@property (nonatomic, strong) short specType;
+//
+@property (nonatomic, strong) NSInteger giveIntegral;
+//
+@property (nonatomic, strong) NSInteger exchangeIntegral;
+//
+@property (nonatomic, strong) short suppliersId;
+//
+@property (nonatomic, strong) NSInteger salesSum;
+//
+@property (nonatomic, strong) BOOL promType;
+//
+@property (nonatomic, strong) NSInteger promId;
+//
+@property (nonatomic, strong) double commission;
+//
+@property (nonatomic, assign) NSString spu;
+//
+@property (nonatomic, assign) NSString sku;
+//
+@property (nonatomic, assign) NSString shippingAreaIds;
+//
+@property (nonatomic, assign) NSString goodsContent;
+//
+@property (nonatomic, assign) NSString catName;
+//
+@property (nonatomic, assign) NSString catParentIdPath;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.GoodsImages : NSObject
+
+//
+@property (nonatomic, strong) NSInteger imgId;
+//
+@property (nonatomic, strong) NSInteger goodsId;
+//
+@property (nonatomic, assign) NSString imageUrl;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.GoodsAttr : NSObject
+
+//
+@property (nonatomic, strong) NSInteger goodsAttrId;
+//
+@property (nonatomic, strong) NSInteger goodsId;
+//
+@property (nonatomic, strong) short attrId;
+//
+@property (nonatomic, assign) NSString attrPrice;
+//
+@property (nonatomic, assign) NSString attrValue;
+//
+@property (nonatomic, assign) NSString attrName;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.SpecGoodsPrice : NSObject
+
+//
+@property (nonatomic, strong) NSInteger id;
+//
+@property (nonatomic, strong) NSInteger goodsId;
+//
+@property (nonatomic, assign) NSString key;
+//
+@property (nonatomic, assign) NSString keyName;
+//
+@property (nonatomic, strong) double price;
+//
+@property (nonatomic, strong) NSInteger storeCount;
+//
+@property (nonatomic, assign) NSString barCode;
+//
+@property (nonatomic, assign) NSString sku;
+//
+@property (nonatomic, strong) [] specGoodsImagesList;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.SpecGoodsImage : NSObject
+
+//
+@property (nonatomic, strong) NSInteger id;
+//
+@property (nonatomic, strong) NSInteger specGoodsId;
+//
+@property (nonatomic, assign) NSString src;
+//
+@property (nonatomic, assign) NSString createTime;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.GoodsAttribute : NSObject
+
+//
+@property (nonatomic, strong) NSInteger attrId;
+//
+@property (nonatomic, assign) NSString attrName;
+//
+@property (nonatomic, strong) short typeId;
+//
+@property (nonatomic, strong) int attrIndex;
+//
+@property (nonatomic, strong) int attrType;
+//
+@property (nonatomic, strong) int attrInputType;
+//
+@property (nonatomic, strong) int order;
+//
+@property (nonatomic, assign) NSString attrValues;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.Spec : NSObject
+
+//
+@property (nonatomic, strong) NSInteger id;
+//
+@property (nonatomic, strong) NSInteger typeId;
+//
+@property (nonatomic, assign) NSString name;
+//
+@property (nonatomic, strong) NSInteger order;
+//
+@property (nonatomic, strong) BOOL searchIndex;
+//
+@property (nonatomic, strong) [] specItemList;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.SpecItem : NSObject
+
+//
+@property (nonatomic, strong) NSInteger id;
+//
+@property (nonatomic, strong) NSInteger specId;
+//
+@property (nonatomic, assign) NSString item;
+//
+@property (nonatomic, strong) BOOL checked;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<body>
+<ul id="events"></ul>
+<script type="application/javascript">
+    function add(message) {
+        const el = document.createElement("li");
+        el.innerHTML = message;
+        document.getElementById("events").appendChild(el);
+    }
+
+    var eventSource = new EventSource("/mall/api/killgoodsSpec/killByQueue?killId=24");
+    eventSource.onmessage = e => {
+        const t = JSON.parse(e.data);
+        add('Message: ' + t.message);
+    }
+    eventSource.onopen = e => add('Connection opened');
+    eventSource.onerror = e => add('Connection closed');
+</script>
+</body>
+</html>

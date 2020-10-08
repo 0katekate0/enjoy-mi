@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>秒杀商品支付管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                享学课堂-小米商城项目-mall-kill
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../mall-kill.iml/index.html">mall-kill.iml</a></li>
+                            <li><a href="../pom.xml/index.html">pom.xml</a></li>
+                            <li><a href="../src/index.html">src</a></li>
+                            <li><a href="../target/index.html">target</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 秒杀商品支付管理
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#doPrePay">
+                        秒杀商品预支付
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#updateByActionId">
+                        修改订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#updateStatusByActionId">
+                        修改订单和订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#doPay">
+                        支付成功后修改状态
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_KillPayServiceImpl.html#queryByPrepayId">
+                        判断支付是否成功
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 订单日志
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#save">
+                        保存订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#savePre">
+                        保存预支付订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#savePre">
+                        seata保存预支付订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#updatePre">
+                        修改预支付订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#save">
+                        保存订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#queryByPrepayId">
+                        根据prepayId查询订单日志
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#queryByOrderId">
+                        查询订单日志
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 秒杀订单管理
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#search">
+                        订单详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#queryOrderByUserId">
+                        查询用户的订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#killOrder">
+                        秒杀商品保存订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#killOrder">
+                        保存订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#selectMyOrderDetail">
+                        查询订单详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#cancel">
+                        取消订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#selfCancel">
+                        自动取消订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#autoCancelExpiredOrder">
+                        取消过期订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#queryOrderNum">
+                        查询各类型的订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#confirmReceiveGoods">
+                        确认收货
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#queryByPage">
+                        查询分页订单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#updateOrder">
+                        seata修改订单状态
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_kill_service_impl_OrderServiceImpl.html#setValues">
+                        setValues
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="doPrePay"><a href="#">秒杀商品预支付 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/kill/order/service/IPayService/doPrePay</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>orderId</td>
+                        <td>long</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>payCode</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>payAmount</td>
+                        <td>double</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>userId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">Map{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="updateByActionId"><a href="#">修改订单日志 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/kill/order/service/IPayService/updateByActionId</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>actionId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">string{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="updateStatusByActionId"><a href="#">修改订单和订单日志 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/kill/order/service/IPayService/updateStatusByActionId</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>actionId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{
+	"orderType":"string",
+	"orderId":"long",
+	"orderSn":"string",
+	"userId":"string",
+	"orderStatus":"int",
+	"shippingStatus":"int",
+	"payStatus":"int",
+	"consignee":"string",
+	"area":"string",
+	"address":"string",
+	"zipcode":"string",
+	"mobile":"string",
+	"email":"string",
+	"shippingCode":"string",
+	"shippingName":"string",
+	"payCode":"string",
+	"payName":"string",
+	"invoiceTitle":"string",
+	"goodsPrice":"double",
+	"shippingPrice":"double",
+	"userMoney":"double",
+	"couponPrice":"double",
+	"integral":"int",
+	"integralMoney":"double",
+	"orderAmount":"double",
+	"totalAmount":"double",
+	"addTime":"long",
+	"shippingTime":"long",
+	"confirmTime":"long",
+	"payTime":"long",
+	"orderPromId":"short",
+	"orderPromAmount":"double",
+	"discount":"double",
+	"userNote":"string",
+	"adminNote":"string",
+	"parentSn":"string",
+	"isDistribut":"boolean",
+	"receiveTime":"long",
+	"orderGoodsList":[{
+		"orderType":"string",
+		"recId":"long",
+		"orderId":"long",
+		"specGoodsId":"int",
+		"goodsId":"int",
+		"goodsName":"string",
+		"goodsSn":"string",
+		"goodsNum":"short",
+		"marketPrice":"double",
+		"goodsPrice":"double",
+		"costPrice":"double",
+		"memberGoodsPrice":"double",
+		"giveIntegral":"int",
+		"specKey":"string",
+		"specKeyName":"string",
+		"barCode":"string",
+		"isComment":"boolean",
+		"promType":"boolean",
+		"promId":"int",
+		"isSend":"boolean",
+		"deliveryId":"int",
+		"sku":"string",
+		"originalImg":"string"
+	}]
+}</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_kill_service_impl_KillPayServiceImpl_updateStatusByActionId_cn.enjoy.mall.model.Order.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_kill_service_impl_KillPayServiceImpl_updateStatusByActionId_cn.enjoy.mall.model.Order.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="setValues"><a href="#">setValues </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>setValues</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="setValues"><a href="#">setValues </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>setValues</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="doPay"><a href="#">支付成功后修改状态 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/kill/order/service/IPayService/doPay</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>orderId</td>
+                        <td>long</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>payCode</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>payAmount</td>
+                        <td>double</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>userId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">string{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="queryByPrepayId"><a href="#">判断支付是否成功 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/kill/order/service/IPayService/queryByPrepayId</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>prepayId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">string{}</pre>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '秒杀商品支付管理.秒杀商品预支付', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#doPrePay'},
+            {name: '秒杀商品支付管理.修改订单日志', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#updateByActionId'},
+            {name: '秒杀商品支付管理.修改订单和订单日志', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#updateStatusByActionId'},
+            {name: '秒杀商品支付管理.setValues', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#setValues'},
+            {name: '秒杀商品支付管理.setValues', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#setValues'},
+            {name: '秒杀商品支付管理.支付成功后修改状态', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#doPay'},
+            {name: '秒杀商品支付管理.判断支付是否成功', url: 'cn_enjoy_kill_service_impl_KillPayServiceImpl.html#queryByPrepayId'},
+            {name: '订单日志.保存订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#save'},
+            {name: '订单日志.保存预支付订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#savePre'},
+            {name: '订单日志.seata保存预支付订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#savePre'},
+            {name: '订单日志.setValues', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#setValues'},
+            {name: '订单日志.修改预支付订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#updatePre'},
+            {name: '订单日志.保存订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#save'},
+            {name: '订单日志.根据prepayId查询订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#queryByPrepayId'},
+            {name: '订单日志.查询订单日志', url: 'cn_enjoy_kill_service_impl_OrderActionServiceImpl.html#queryByOrderId'},
+            {name: '秒杀订单管理.订单详情', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#search'},
+            {name: '秒杀订单管理.查询用户的订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#queryOrderByUserId'},
+            {name: '秒杀订单管理.秒杀商品保存订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#killOrder'},
+            {name: '秒杀订单管理.保存订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#killOrder'},
+            {name: '秒杀订单管理.查询订单详情', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#selectMyOrderDetail'},
+            {name: '秒杀订单管理.取消订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#cancel'},
+            {name: '秒杀订单管理.自动取消订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#selfCancel'},
+            {name: '秒杀订单管理.取消过期订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#autoCancelExpiredOrder'},
+            {name: '秒杀订单管理.查询各类型的订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#queryOrderNum'},
+            {name: '秒杀订单管理.确认收货', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#confirmReceiveGoods'},
+            {name: '秒杀订单管理.查询分页订单', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#queryByPage'},
+            {name: '秒杀订单管理.seata修改订单状态', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#updateOrder'},
+            {name: '秒杀订单管理.setValues', url: 'cn_enjoy_kill_service_impl_OrderServiceImpl.html#setValues'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

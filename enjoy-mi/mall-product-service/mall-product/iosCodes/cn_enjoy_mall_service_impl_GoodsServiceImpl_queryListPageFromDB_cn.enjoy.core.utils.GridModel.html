@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.core.utils.GridModel</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.core.utils.GridModel : NSObject
+
+//
+@property (nonatomic, strong) NSInteger page;
+//
+@property (nonatomic, strong) long records;
+//
+@property (nonatomic, strong) NSInteger total;
+//
+@property (nonatomic, strong) [] rows;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.mall.model.Goods : NSObject
+
+//
+@property (nonatomic, strong) NSInteger goodsId;
+//
+@property (nonatomic, strong) NSInteger catId;
+//
+@property (nonatomic, strong) NSInteger extendCatId;
+//
+@property (nonatomic, assign) NSString goodsSn;
+//
+@property (nonatomic, assign) NSString goodsName;
+//
+@property (nonatomic, strong) NSInteger clickCount;
+//
+@property (nonatomic, strong) short brandId;
+//
+@property (nonatomic, strong) short storeCount;
+//
+@property (nonatomic, strong) short commentCount;
+//
+@property (nonatomic, strong) NSInteger weight;
+//
+@property (nonatomic, strong) double marketPrice;
+//
+@property (nonatomic, strong) double shopPrice;
+//
+@property (nonatomic, strong) double costPrice;
+//
+@property (nonatomic, assign) NSString keywords;
+//
+@property (nonatomic, assign) NSString goodsRemark;
+//
+@property (nonatomic, assign) NSString originalImg;
+//
+@property (nonatomic, strong) BOOL isReal;
+//
+@property (nonatomic, strong) BOOL isOnSale;
+//
+@property (nonatomic, strong) BOOL isFreeShipping;
+//
+@property (nonatomic, strong) NSInteger onTime;
+//
+@property (nonatomic, strong) short sort;
+//
+@property (nonatomic, strong) BOOL isRecommend;
+//
+@property (nonatomic, strong) BOOL isNew;
+//
+@property (nonatomic, strong) BOOL isHot;
+//
+@property (nonatomic, strong) NSInteger lastUpdate;
+//
+@property (nonatomic, strong) short goodsType;
+//
+@property (nonatomic, strong) short specType;
+//
+@property (nonatomic, strong) NSInteger giveIntegral;
+//
+@property (nonatomic, strong) NSInteger exchangeIntegral;
+//
+@property (nonatomic, strong) short suppliersId;
+//
+@property (nonatomic, strong) NSInteger salesSum;
+//
+@property (nonatomic, strong) BOOL promType;
+//
+@property (nonatomic, strong) NSInteger promId;
+//
+@property (nonatomic, strong) double commission;
+//
+@property (nonatomic, assign) NSString spu;
+//
+@property (nonatomic, assign) NSString sku;
+//
+@property (nonatomic, assign) NSString shippingAreaIds;
+//
+@property (nonatomic, assign) NSString goodsContent;
+//
+@property (nonatomic, assign) NSString catName;
+//
+@property (nonatomic, assign) NSString catParentIdPath;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

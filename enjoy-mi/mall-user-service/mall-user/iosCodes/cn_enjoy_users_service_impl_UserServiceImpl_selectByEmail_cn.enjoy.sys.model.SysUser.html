@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.sys.model.SysUser</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.sys.model.SysUser : NSObject
+
+//
+@property (nonatomic, assign) NSString id;
+//
+@property (nonatomic, assign) NSString userName;
+//
+@property (nonatomic, assign) NSString password;
+//
+@property (nonatomic, assign) NSString passwordRand;
+//
+@property (nonatomic, assign) NSString realName;
+//
+@property (nonatomic, assign) NSString mobile;
+//
+@property (nonatomic, assign) NSString email;
+//
+@property (nonatomic, assign) NSString orgCode;
+//
+@property (nonatomic, assign) NSString identityCode;
+//
+@property (nonatomic, assign) NSString sysCode;
+//
+@property (nonatomic, strong) NSInteger status;
+//
+@property (nonatomic, assign) NSString validateCode;
+//
+@property (nonatomic, assign) NSString activatedTime;
+//
+@property (nonatomic, assign) NSString createTime;
+//
+@property (nonatomic, assign) NSString createUser;
+//
+@property (nonatomic, assign) NSString updateTime;
+//
+@property (nonatomic, assign) NSString updateUser;
+//
+@property (nonatomic, assign) NSString birthday;
+//
+@property (nonatomic, assign) NSString captcha;
+//
+@property (nonatomic, assign) NSString captchaTime;
+//
+@property (nonatomic, assign) NSString qq;
+//
+@property (nonatomic, assign) NSString wx;
+//
+@property (nonatomic, assign) NSString icon;
+//
+@property (nonatomic, assign) NSString positionLevel;
+//
+@property (nonatomic, assign) NSString positionLevelStr;
+//
+@property (nonatomic, assign) NSString principals;
+//
+@property (nonatomic, assign) NSString loginAccount;
+//
+@property (nonatomic, strong) [] roleList;
+//
+@property (nonatomic, strong) string[] roleIds;
+//
+@property (nonatomic, assign) NSString isCanLogin;
+
+
+@end
+</xmp>
+</pre>
+
+<pre class="prettyprint">
+<xmp>
+#import <Foundation/Foundation>;
+
+@interface cn.enjoy.sys.model.SysRole : NSObject
+
+//
+@property (nonatomic, assign) NSString id;
+//
+@property (nonatomic, assign) NSString roleCode;
+//
+@property (nonatomic, assign) NSString roleName;
+//
+@property (nonatomic, assign) NSString roleDesc;
+//
+@property (nonatomic, assign) NSString sysCode;
+//
+@property (nonatomic, assign) NSString createTime;
+//
+@property (nonatomic, assign) NSString createUser;
+//
+@property (nonatomic, assign) NSString updateUser;
+//
+@property (nonatomic, assign) NSString updateTime;
+//
+@property (nonatomic, strong) int isdefault;
+
+
+@end
+</xmp>
+</pre>
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

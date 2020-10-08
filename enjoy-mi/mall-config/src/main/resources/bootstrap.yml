@@ -1,0 +1,10 @@
+server:
+  port: 8195
+  tomcat:
+    max-threads: 1000
+    accept-count: 1000
+    max-connections: 2000
+    uri-encoding: UTF-8
+spring:
+  profiles:
+    active: beta

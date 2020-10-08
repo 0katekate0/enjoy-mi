@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.core.utils.response.HttpResponseBody</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.core.utils.response.HttpResponseBody implements Serializable{
+
+    private String code; //
+    private String msg; //
+    private unknow data; //
+
+    public String getCode(){
+        return code;
+    }
+
+    public void setCode(String code){
+        this.code = code;
+    }
+
+    public String getMsg(){
+        return msg;
+    }
+
+    public void setMsg(String msg){
+        this.msg = msg;
+    }
+
+    public unknow getData(){
+        return data;
+    }
+
+    public void setData(unknow data){
+        this.data = data;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.core.utils.GridModel implements Serializable{
+
+    private int page; //
+    private long records; //
+    private int total; //
+    private [] rows; //
+
+    public int getPage(){
+        return page;
+    }
+
+    public void setPage(int page){
+        this.page = page;
+    }
+
+    public long getRecords(){
+        return records;
+    }
+
+    public void setRecords(long records){
+        this.records = records;
+    }
+
+    public int getTotal(){
+        return total;
+    }
+
+    public void setTotal(int total){
+        this.total = total;
+    }
+
+    public [] getRows(){
+        return rows;
+    }
+
+    public void setRows([] rows){
+        this.rows = rows;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.sys.model.SysUser implements Serializable{
+
+    private String id; //
+    private String userName; //
+    private String password; //
+    private String passwordRand; //
+    private String realName; //
+    private String mobile; //
+    private String email; //
+    private String orgCode; //
+    private String identityCode; //
+    private String sysCode; //
+    private int status; //
+    private String validateCode; //
+    private String activatedTime; //
+    private String createTime; //
+    private String createUser; //
+    private String updateTime; //
+    private String updateUser; //
+    private String birthday; //
+    private String captcha; //
+    private String captchaTime; //
+    private String qq; //
+    private String wx; //
+    private String icon; //
+    private String positionLevel; //
+    private String positionLevelStr; //
+    private String principals; //
+    private String loginAccount; //
+    private [] roleList; //
+    private string[] roleIds; //
+    private String isCanLogin; //
+
+    public String getId(){
+        return id;
+    }
+
+    public void setId(String id){
+        this.id = id;
+    }
+
+    public String getUserName(){
+        return userName;
+    }
+
+    public void setUserName(String userName){
+        this.userName = userName;
+    }
+
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+    public String getPasswordRand(){
+        return passwordRand;
+    }
+
+    public void setPasswordRand(String passwordRand){
+        this.passwordRand = passwordRand;
+    }
+
+    public String getRealName(){
+        return realName;
+    }
+
+    public void setRealName(String realName){
+        this.realName = realName;
+    }
+
+    public String getMobile(){
+        return mobile;
+    }
+
+    public void setMobile(String mobile){
+        this.mobile = mobile;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getOrgCode(){
+        return orgCode;
+    }
+
+    public void setOrgCode(String orgCode){
+        this.orgCode = orgCode;
+    }
+
+    public String getIdentityCode(){
+        return identityCode;
+    }
+
+    public void setIdentityCode(String identityCode){
+        this.identityCode = identityCode;
+    }
+
+    public String getSysCode(){
+        return sysCode;
+    }
+
+    public void setSysCode(String sysCode){
+        this.sysCode = sysCode;
+    }
+
+    public int getStatus(){
+        return status;
+    }
+
+    public void setStatus(int status){
+        this.status = status;
+    }
+
+    public String getValidateCode(){
+        return validateCode;
+    }
+
+    public void setValidateCode(String validateCode){
+        this.validateCode = validateCode;
+    }
+
+    public String getActivatedTime(){
+        return activatedTime;
+    }
+
+    public void setActivatedTime(String activatedTime){
+        this.activatedTime = activatedTime;
+    }
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public String getCreateUser(){
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser){
+        this.createUser = createUser;
+    }
+
+    public String getUpdateTime(){
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime){
+        this.updateTime = updateTime;
+    }
+
+    public String getUpdateUser(){
+        return updateUser;
+    }
+
+    public void setUpdateUser(String updateUser){
+        this.updateUser = updateUser;
+    }
+
+    public String getBirthday(){
+        return birthday;
+    }
+
+    public void setBirthday(String birthday){
+        this.birthday = birthday;
+    }
+
+    public String getCaptcha(){
+        return captcha;
+    }
+
+    public void setCaptcha(String captcha){
+        this.captcha = captcha;
+    }
+
+    public String getCaptchaTime(){
+        return captchaTime;
+    }
+
+    public void setCaptchaTime(String captchaTime){
+        this.captchaTime = captchaTime;
+    }
+
+    public String getQq(){
+        return qq;
+    }
+
+    public void setQq(String qq){
+        this.qq = qq;
+    }
+
+    public String getWx(){
+        return wx;
+    }
+
+    public void setWx(String wx){
+        this.wx = wx;
+    }
+
+    public String getIcon(){
+        return icon;
+    }
+
+    public void setIcon(String icon){
+        this.icon = icon;
+    }
+
+    public String getPositionLevel(){
+        return positionLevel;
+    }
+
+    public void setPositionLevel(String positionLevel){
+        this.positionLevel = positionLevel;
+    }
+
+    public String getPositionLevelStr(){
+        return positionLevelStr;
+    }
+
+    public void setPositionLevelStr(String positionLevelStr){
+        this.positionLevelStr = positionLevelStr;
+    }
+
+    public String getPrincipals(){
+        return principals;
+    }
+
+    public void setPrincipals(String principals){
+        this.principals = principals;
+    }
+
+    public String getLoginAccount(){
+        return loginAccount;
+    }
+
+    public void setLoginAccount(String loginAccount){
+        this.loginAccount = loginAccount;
+    }
+
+    public [] getRoleList(){
+        return roleList;
+    }
+
+    public void setRoleList([] roleList){
+        this.roleList = roleList;
+    }
+
+    public string[] getRoleIds(){
+        return roleIds;
+    }
+
+    public void setRoleIds(string[] roleIds){
+        this.roleIds = roleIds;
+    }
+
+    public String getIsCanLogin(){
+        return isCanLogin;
+    }
+
+    public void setIsCanLogin(String isCanLogin){
+        this.isCanLogin = isCanLogin;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.sys.model.SysRole implements Serializable{
+
+    private String id; //
+    private String roleCode; //
+    private String roleName; //
+    private String roleDesc; //
+    private String sysCode; //
+    private String createTime; //
+    private String createUser; //
+    private String updateUser; //
+    private String updateTime; //
+    private byte isdefault; //
+
+    public String getId(){
+        return id;
+    }
+
+    public void setId(String id){
+        this.id = id;
+    }
+
+    public String getRoleCode(){
+        return roleCode;
+    }
+
+    public void setRoleCode(String roleCode){
+        this.roleCode = roleCode;
+    }
+
+    public String getRoleName(){
+        return roleName;
+    }
+
+    public void setRoleName(String roleName){
+        this.roleName = roleName;
+    }
+
+    public String getRoleDesc(){
+        return roleDesc;
+    }
+
+    public void setRoleDesc(String roleDesc){
+        this.roleDesc = roleDesc;
+    }
+
+    public String getSysCode(){
+        return sysCode;
+    }
+
+    public void setSysCode(String sysCode){
+        this.sysCode = sysCode;
+    }
+
+    public String getCreateTime(){
+        return createTime;
+    }
+
+    public void setCreateTime(String createTime){
+        this.createTime = createTime;
+    }
+
+    public String getCreateUser(){
+        return createUser;
+    }
+
+    public void setCreateUser(String createUser){
+        this.createUser = createUser;
+    }
+
+    public String getUpdateUser(){
+        return updateUser;
+    }
+
+    public void setUpdateUser(String updateUser){
+        this.updateUser = updateUser;
+    }
+
+    public String getUpdateTime(){
+        return updateTime;
+    }
+
+    public void setUpdateTime(String updateTime){
+        this.updateTime = updateTime;
+    }
+
+    public byte getIsdefault(){
+        return isdefault;
+    }
+
+    public void setIsdefault(byte isdefault){
+        this.isdefault = isdefault;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

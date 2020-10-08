@@ -1,0 +1,19 @@
+server:
+  port: 8763
+  tomcat:
+    max-threads: 1000
+    accept-count: 1000
+    max-connections: 2000
+    uri-encoding: UTF-8
+
+spring:
+  profiles:
+    active: ${spring.profiles.active:test}
+#spring:
+#  profiles:
+#    active: beta
+
+#是否注册到eureka
+
+
+#服务手动下线 delete请求 http://localhost:8763/eureka/apps/MICRO-ORDER/localhost:micro-order:8084

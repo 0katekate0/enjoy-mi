@@ -1,0 +1,43 @@
+
+server:
+  port: 8192
+goods:
+  pic:
+    domain: http://demo5.tp-shop.cn
+spring:
+  application:
+    name: mall-admin
+  security:
+    user:
+      name: admin
+      password: admin
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:admin@eureka.h:8763/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    metadata-map:
+      user:
+        name: ${spring.security.user.name}
+        password: ${spring.security.user.password}
+    #hostname:
+    #ip-address: 94.191.83.120
+    #prefer-ip-address: true
+    #instance-id: ${eureka.instance.ip-address}:${spring.application.name}:${server.port}
+
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+

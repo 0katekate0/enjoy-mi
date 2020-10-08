@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>商品目录管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                享学课堂-小米商城项目-mall-product-service
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../mall-product-service.iml/index.html">mall-product-service.iml</a></li>
+                            <li><a href="../pom.xml/index.html">pom.xml</a></li>
+                            <li><a href="../src/index.html">src</a></li>
+                            <li><a href="../target/index.html">target</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品目录管理
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#cacheCategoryTree">
+                        cacheCategoryTree
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategoryTree">
+                        查询商品目录树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategoryTree3">
+                        查询3级目录树
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategoryByParentId">
+                        根据父id查询目录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategory4Home">
+                        查询主页的目录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#produceCategory4Home">
+                        查询主页目录树并加入mongodb
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getCategory4HomeFromMg">
+                        从mongodb中查询主页目录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#produceCategoryGoodsCount">
+                        自动计算每个分类下的商品数据，存入mongodb
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#produceHotCategories">
+                        查询热门2级分类
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#searchList">
+                        搜索框自动提示
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getClassification">
+                        从mongodb查询分类信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getBrands">
+                        查询品牌信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getHotGoods">
+                        查询热门商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getSubCats">
+                        获取子分类(包括自己)
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getSubCats">
+                        获取子分类(包括自己)
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品管理
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#findOneById">
+                        根据goodsId从mongodb中查询商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#findOneBySpecGoodsId">
+                        根据specGoodsId从mongodb中查询商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#findOneByKillGoodsId">
+                        根据秒杀商品id查询商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#save">
+                        保存商品信息-【后端】配商品时用到
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#delete">
+                        删除商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#deteteBatch">
+                        批量删除商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryListPageFromDB">
+                        查询商品列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryDetailFromDB">
+                        查询商品详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsFromDB">
+                        查询商品信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsImageFromDB">
+                        查询商品图片
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#querySpecGoodsPriceListFromDB">
+                        查询商品规格
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsAttrListFromDB">
+                        查询商品属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsAttributeListByTypeFromDB">
+                        根据typeId查询商品属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsAttributeListByGoodsIdAndTypeFromDB">
+                        根据goodsId和typeId查询商品属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#querySpecListByTypeFromDB">
+                        根据typeId查询商品规格
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#querySpecListByGoodsIdAndTypeIdFromDB">
+                        根据goodsId和typeId查询商品规格
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#saveGoodsImages2DB">
+                        保存商品图片地址
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#saveGoodsSpecAndAttr2DB">
+                        保存商品规格和属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#searchList">
+                        根据关键字、商品名称查询商品列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#publishAll2MongoDB">
+                        发布所有商品到mongodb
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#publishGoods2MongoDB">
+                        发布单个商品到mongodb
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#publishGoods2MongoDB">
+                        保存商品到mongodb
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryHotSellingGoods">
+                        查询热销商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#updateBySpecGoodsIds">
+                        更新库存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_GoodsServiceImpl.html#getBatchSize">
+                        getBatchSize
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品模型
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#queryByPage">
+                        查询商品属性列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#save">
+                        保存商品属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#update">
+                        更新商品属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#delete">
+                        删除商品属性
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#deleteByIds">
+                        批量删除商品属性
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品品牌
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_BrandServiceImpl.html#getAll">
+                        查询全量品牌信息
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品目录管理
+            </div>
+            <div id="collapse4" class="collapse " aria-labelledby="heading4">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#queryByPage">
+                        查询商品目录列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#save">
+                        保存货更新商品目录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#delete">
+                        删除商品目录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#deleteByIds">
+                        批量删除商品目录
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading5" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse5" aria-controls="collapse5">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品模型
+            </div>
+            <div id="collapse5" class="collapse " aria-labelledby="heading5">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#queryByPage">
+                        查询商品模型列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#save">
+                        保存规格和规格项
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#update">
+                        更新规格
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#delete">
+                        删除规格
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#deleteByIds">
+                        批量删除规格
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading6" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse6" aria-controls="collapse6">
+                <i class="glyphicon glyphicon-align-justify"></i> 商品类型
+            </div>
+            <div id="collapse6" class="collapse " aria-labelledby="heading6">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#queryByPage">
+                        查询商品类型列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#queryAll">
+                        全量查询商品类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#save">
+                        保存或者更新商品类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#delete">
+                        删除商品类型
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#deleteByIds">
+                        批量删除商品类型
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading7" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse7" aria-controls="collapse7">
+                <i class="glyphicon glyphicon-align-justify"></i> KillGoodsManageServiceImpl
+            </div>
+            <div id="collapse7" class="collapse " aria-labelledby="heading7">
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#delete">
+                        删除秒杀商品缓存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#save">
+                        保存秒杀商品并加入缓存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#selectCountBySpecGoodId">
+                        根据specGoodsId查询秒杀商品数量
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#selectByPrimaryKey">
+                        根据主键查询秒杀商品
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#detailBySpecGoodId">
+                        根据specGoodsId查询秒杀商品详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#detailById">
+                        根据主键查询秒杀商品详情
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#update">
+                        更新秒杀商品并刷新缓存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#updateSecKill">
+                        更新库存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#updateBySpecGoodsId">
+                        根据specGoodsId更新库存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#setValues">
+                        setValues
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#flushCache">
+                        刷新缓存
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#queryByPage">
+                        查询秒杀商品列表
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#queryView">
+                        查询秒杀商品列表
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="cacheCategoryTree"><a href="#">cacheCategoryTree </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>cacheCategoryTree</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="selectCategoryTree"><a href="#">查询商品目录树 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/selectCategoryTree</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>parentId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>keywords</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">CategoryTree[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="selectCategoryTree3"><a href="#">查询3级目录树 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/selectCategoryTree3</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>parentId</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>keywords</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">CategoryTree[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="selectCategoryByParentId"><a href="#">根据父id查询目录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/selectCategoryByParentId</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>parentId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">CategoryTree[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="selectCategory4Home"><a href="#">查询主页的目录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/selectCategory4Home</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>parentId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">CategoryTree[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="produceCategory4Home"><a href="#">查询主页目录树并加入mongodb </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/produceCategory4Home</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="getCategory4HomeFromMg"><a href="#">从mongodb中查询主页目录 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/getCategory4HomeFromMg</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">CategoryTree[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="produceCategoryGoodsCount"><a href="#">自动计算每个分类下的商品数据，存入mongodb </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/produceCategoryGoodsCount</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="produceHotCategories"><a href="#">查询热门2级分类 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/produceHotCategories</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">{}</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="searchList"><a href="#">搜索框自动提示 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/searchList</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>keyword</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">CategoryCountVo[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="getClassification"><a href="#">从mongodb查询分类信息 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/getClassification</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"int",
+	"name":"string",
+	"mobileName":"string",
+	"parentId":"int",
+	"parentIdPath":"string",
+	"level":"short",
+	"sortOrder":"short",
+	"isShow":"boolean",
+	"image":"string",
+	"isHot":"boolean",
+	"catGroup":"boolean",
+	"commissionRate":"boolean"
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl_getClassification_cn.enjoy.mall.model.GoodsCategory.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl_getClassification_cn.enjoy.mall.model.GoodsCategory.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="getBrands"><a href="#">查询品牌信息 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/getBrands</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"short",
+	"name":"string",
+	"logo":"string",
+	"url":"string",
+	"sort":"byte",
+	"catName":"string",
+	"parentCatId":"int",
+	"catId":"int",
+	"isHot":"boolean",
+	"desc":"string"
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl_getBrands_cn.enjoy.mall.model.Brand.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl_getBrands_cn.enjoy.mall.model.Brand.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="getHotGoods"><a href="#">查询热门商品 </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/getHotGoods</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">HotGoodsVo[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="getSubCats"><a href="#">获取子分类(包括自己) </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/getSubCats</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>catId</td>
+                        <td>int</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">int[]</pre>
+                        </div>
+                        <hr>
+                        <div class="action-item">
+<h2 id="getSubCats"><a href="#">获取子分类(包括自己) </a></h2>
+    <p class="text-muted"><em>作者: Jack</em></p>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>/product/mall/service/IGoodsCategoryService/getSubCats1</code>
+        <span class="label label-default">POST</span>
+</p>
+        <p><strong>请求参数</strong> <span class="badge">application/x-www-form-urlencoded</span></p>
+        <table class="table table-bordered">
+            <tr>
+                <th>参数名</th>
+                <th>类型</th>
+                <th>必须</th>
+                <th>描述</th>
+            </tr>
+                    <tr>
+                        <td>catName</td>
+                        <td>string</td>
+                        <td>否</td>
+                        <td></td>
+                    </tr>
+        </table>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">int[]</pre>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '商品目录管理.cacheCategoryTree', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#cacheCategoryTree'},
+            {name: '商品目录管理.查询商品目录树', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategoryTree'},
+            {name: '商品目录管理.查询3级目录树', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategoryTree3'},
+            {name: '商品目录管理.根据父id查询目录', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategoryByParentId'},
+            {name: '商品目录管理.查询主页的目录', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#selectCategory4Home'},
+            {name: '商品目录管理.查询主页目录树并加入mongodb', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#produceCategory4Home'},
+            {name: '商品目录管理.从mongodb中查询主页目录', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getCategory4HomeFromMg'},
+            {name: '商品目录管理.自动计算每个分类下的商品数据，存入mongodb', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#produceCategoryGoodsCount'},
+            {name: '商品目录管理.查询热门2级分类', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#produceHotCategories'},
+            {name: '商品目录管理.搜索框自动提示', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#searchList'},
+            {name: '商品目录管理.从mongodb查询分类信息', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getClassification'},
+            {name: '商品目录管理.查询品牌信息', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getBrands'},
+            {name: '商品目录管理.查询热门商品', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getHotGoods'},
+            {name: '商品目录管理.获取子分类(包括自己)', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getSubCats'},
+            {name: '商品目录管理.获取子分类(包括自己)', url: 'cn_enjoy_mall_service_impl_GoodsCategoryServiceImpl.html#getSubCats'},
+            {name: '商品管理.根据goodsId从mongodb中查询商品', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#findOneById'},
+            {name: '商品管理.根据specGoodsId从mongodb中查询商品', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#findOneBySpecGoodsId'},
+            {name: '商品管理.根据秒杀商品id查询商品', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#findOneByKillGoodsId'},
+            {name: '商品管理.保存商品信息-【后端】配商品时用到', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#save'},
+            {name: '商品管理.删除商品', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#delete'},
+            {name: '商品管理.批量删除商品', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#deteteBatch'},
+            {name: '商品管理.查询商品列表', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryListPageFromDB'},
+            {name: '商品管理.查询商品详情', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryDetailFromDB'},
+            {name: '商品管理.查询商品信息', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsFromDB'},
+            {name: '商品管理.查询商品图片', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsImageFromDB'},
+            {name: '商品管理.查询商品规格', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#querySpecGoodsPriceListFromDB'},
+            {name: '商品管理.查询商品属性', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsAttrListFromDB'},
+            {name: '商品管理.根据typeId查询商品属性', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsAttributeListByTypeFromDB'},
+            {name: '商品管理.根据goodsId和typeId查询商品属性', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryGoodsAttributeListByGoodsIdAndTypeFromDB'},
+            {name: '商品管理.根据typeId查询商品规格', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#querySpecListByTypeFromDB'},
+            {name: '商品管理.根据goodsId和typeId查询商品规格', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#querySpecListByGoodsIdAndTypeIdFromDB'},
+            {name: '商品管理.保存商品图片地址', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#saveGoodsImages2DB'},
+            {name: '商品管理.保存商品规格和属性', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#saveGoodsSpecAndAttr2DB'},
+            {name: '商品管理.根据关键字、商品名称查询商品列表', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#searchList'},
+            {name: '商品管理.发布所有商品到mongodb', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#publishAll2MongoDB'},
+            {name: '商品管理.发布单个商品到mongodb', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#publishGoods2MongoDB'},
+            {name: '商品管理.保存商品到mongodb', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#publishGoods2MongoDB'},
+            {name: '商品管理.查询热销商品', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#queryHotSellingGoods'},
+            {name: '商品管理.更新库存', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#updateBySpecGoodsIds'},
+            {name: '商品管理.setValues', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#setValues'},
+            {name: '商品管理.getBatchSize', url: 'cn_enjoy_mall_service_impl_GoodsServiceImpl.html#getBatchSize'},
+            {name: '商品模型.查询商品属性列表', url: 'cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#queryByPage'},
+            {name: '商品模型.保存商品属性', url: 'cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#save'},
+            {name: '商品模型.更新商品属性', url: 'cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#update'},
+            {name: '商品模型.删除商品属性', url: 'cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#delete'},
+            {name: '商品模型.批量删除商品属性', url: 'cn_enjoy_mall_service_impl_manage_AttributeManageServiceImpl.html#deleteByIds'},
+            {name: '商品品牌.查询全量品牌信息', url: 'cn_enjoy_mall_service_impl_manage_BrandServiceImpl.html#getAll'},
+            {name: '商品目录管理.查询商品目录列表', url: 'cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#queryByPage'},
+            {name: '商品目录管理.保存货更新商品目录', url: 'cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#save'},
+            {name: '商品目录管理.删除商品目录', url: 'cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#delete'},
+            {name: '商品目录管理.批量删除商品目录', url: 'cn_enjoy_mall_service_impl_manage_CategoryManageServiceImpl.html#deleteByIds'},
+            {name: '商品模型.查询商品模型列表', url: 'cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#queryByPage'},
+            {name: '商品模型.保存规格和规格项', url: 'cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#save'},
+            {name: '商品模型.更新规格', url: 'cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#update'},
+            {name: '商品模型.删除规格', url: 'cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#delete'},
+            {name: '商品模型.批量删除规格', url: 'cn_enjoy_mall_service_impl_manage_GoodsSpecManageServiceImpl.html#deleteByIds'},
+            {name: '商品类型.查询商品类型列表', url: 'cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#queryByPage'},
+            {name: '商品类型.全量查询商品类型', url: 'cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#queryAll'},
+            {name: '商品类型.保存或者更新商品类型', url: 'cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#save'},
+            {name: '商品类型.删除商品类型', url: 'cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#delete'},
+            {name: '商品类型.批量删除商品类型', url: 'cn_enjoy_mall_service_impl_manage_GoodsTypeManageServiceImpl.html#deleteByIds'},
+            {name: 'KillGoodsManageServiceImpl.删除秒杀商品缓存', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#delete'},
+            {name: 'KillGoodsManageServiceImpl.保存秒杀商品并加入缓存', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#save'},
+            {name: 'KillGoodsManageServiceImpl.根据specGoodsId查询秒杀商品数量', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#selectCountBySpecGoodId'},
+            {name: 'KillGoodsManageServiceImpl.根据主键查询秒杀商品', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#selectByPrimaryKey'},
+            {name: 'KillGoodsManageServiceImpl.根据specGoodsId查询秒杀商品详情', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#detailBySpecGoodId'},
+            {name: 'KillGoodsManageServiceImpl.根据主键查询秒杀商品详情', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#detailById'},
+            {name: 'KillGoodsManageServiceImpl.更新秒杀商品并刷新缓存', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#update'},
+            {name: 'KillGoodsManageServiceImpl.更新库存', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#updateSecKill'},
+            {name: 'KillGoodsManageServiceImpl.根据specGoodsId更新库存', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#updateBySpecGoodsId'},
+            {name: 'KillGoodsManageServiceImpl.setValues', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#setValues'},
+            {name: 'KillGoodsManageServiceImpl.刷新缓存', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#flushCache'},
+            {name: 'KillGoodsManageServiceImpl.查询秒杀商品列表', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#queryByPage'},
+            {name: 'KillGoodsManageServiceImpl.查询秒杀商品列表', url: 'cn_enjoy_mall_service_impl_manage_KillGoodsManageServiceImpl.html#queryView'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

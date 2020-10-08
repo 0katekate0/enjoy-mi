@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>UserRoleServiceImpl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="PR.prettyPrint()">
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                享学课堂-小米商城项目-mall-user-service
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/YeDaxia/JApiDocs" target="_blank">GitHub</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">V1.0<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../mall-user-service.iml/index.html">mall-user-service.iml</a></li>
+                            <li><a href="../pom.xml/index.html">pom.xml</a></li>
+                            <li><a href="../src/index.html">src</a></li>
+                            <li><a href="../target/index.html">target</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="book with-summary">
+    <div class="book-summary">
+<div class="search-box form-group">
+    <input type="text" class="form-control" id="inputSearch" placeholder="搜索接口">
+    <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+</div>
+<div id="accordion" class="catalog">
+        <div class="panel">
+            <div id="heading0" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse0" aria-controls="collapse0">
+                <i class="glyphicon glyphicon-align-justify"></i> 权限管理
+            </div>
+            <div id="collapse0" class="collapse in " aria-labelledby="heading0">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientId">
+                        验证oauth2.0客户端是否存在
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientSecret">
+                        验证oauth2.0密码是否存在
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getExpireIn">
+                        获取过期时间
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#findClientByClientId">
+                        根据客户端id获取鉴权客户端信息
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getClientMap">
+                        获取所有的鉴权客户端信息
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading1" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse1" aria-controls="collapse1">
+                <i class="glyphicon glyphicon-align-justify"></i> DepartmentServiceImpl
+            </div>
+            <div id="collapse1" class="collapse " aria-labelledby="heading1">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#saveDepartment">
+                        数据库中没有排布
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#editDepartment">
+                        editDepartment
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#loadDepartment">
+                        loadDepartment
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#removeDepartment">
+                        removeDepartment
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectDepartmentById">
+                        selectDepartmentById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByToTree">
+                        selectByToTree
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByUserId">
+                        selectByUserId
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading2" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse2" aria-controls="collapse2">
+                <i class="glyphicon glyphicon-align-justify"></i> <p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>
+            </div>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findDictByType">
+                        findDictByType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByCode">
+                        queryDictDataByCode
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDict">
+                        findAllDict
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDictType">
+                        findAllDictType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#findSelectModelsByType">
+                        findSelectModelsByType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByTypeAndORDER">
+                        queryDictDataByTypeAndORDER
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryAllDictDataPage">
+                        queryAllDictDataPage
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteByIds">
+                        deleteByIds
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#addDictData">
+                        addDictData
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#selectByPrimaryKey">
+                        selectByPrimaryKey
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteDictData">
+                        deleteDictData
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#freezeDictData">
+                        freezeDictData
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictDataServiceImpl.html#updateDictData">
+                        updateDictData
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading3" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse3" aria-controls="collapse3">
+                <i class="glyphicon glyphicon-align-justify"></i> DictTypeServiceImpl
+            </div>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findDictByType">
+                        findDictByType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDict">
+                        findAllDict
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDictType">
+                        findAllDictType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findSelectModelsByType">
+                        findSelectModelsByType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryDictDataByTypeAndORDER">
+                        queryDictDataByTypeAndORDER
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryAllDictTypePage">
+                        queryAllDictTypePage
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteByIds">
+                        deleteByIds
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#addDictType">
+                        addDictType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#selectByPrimaryKey">
+                        selectByPrimaryKey
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteDictType">
+                        deleteDictType
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#freezeDictTyp">
+                        freezeDictTyp
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_DictTypeServiceImpl.html#updateDictType">
+                        updateDictType
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading4" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse4" aria-controls="collapse4">
+                <i class="glyphicon glyphicon-align-justify"></i> LoginServiceImpl
+            </div>
+            <div id="collapse4" class="collapse " aria-labelledby="heading4">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#login">
+                        支持微信登录
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#loginByStrToken">
+                        loginByStrToken
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#login">
+                        登录处理
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#queryMenus">
+                        查询菜单
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList">
+                        查询权限
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList">
+                        查询权限
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_LoginServiceImpl.html#login">
+                        login
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading5" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse5" aria-controls="collapse5">
+                <i class="glyphicon glyphicon-align-justify"></i> <p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>
+            </div>
+            <div id="collapse5" class="collapse " aria-labelledby="heading5">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#getMenuIdByUrl">
+                        getMenuIdByUrl
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceTree">
+                        queryResourceTree
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryInitResourceTree">
+                        queryInitResourceTree
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceById">
+                        queryResourceById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#loadResourceData">
+                        loadResourceData
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#saveResource">
+                        saveResource
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectById">
+                        selectById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#updateByPrimaryKey">
+                        updateByPrimaryKey
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectChildById">
+                        selectChildById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResource">
+                        lockResource
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResourceAndChild">
+                        lockResourceAndChild
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentName">
+                        selectParentName
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentStatusById">
+                        selectParentStatusById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#unlockResource">
+                        unlockResource
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceList">
+                        selectResourceList
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectTreeViewResource">
+                        selectTreeViewResource
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByPrimaryKey">
+                        deleteByPrimaryKey
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#getResourceByUrl">
+                        getResourceByUrl
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#getAllParentResourceListById">
+                        
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectbyUserId">
+                        selectbyUserId
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectBySysCode">
+                        selectBySysCode
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByCode">
+                        selectResourceByCode
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByParentId">
+                        selectResourceByParentId
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteById">
+                        deleteById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByIds">
+                        deleteByIds
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResouceIdByRoleId">
+                        selectResouceIdByRoleId
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading6" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse6" aria-controls="collapse6">
+                <i class="glyphicon glyphicon-align-justify"></i> <p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>
+            </div>
+            <div id="collapse6" class="collapse " aria-labelledby="heading6">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#addDefaultRoles">
+                        addDefaultRoles
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#addRole">
+                        新增角色和业务模块关联
+<li>创建人：xiaopu</li>
+<li>创建时间：2015年9月10日</li>
+<li>创建目的：【】</li>
+<li>修改目的：【修改人：，修改时间：】</li>
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#addRoleXA">
+                        addRoleXA
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#insertRole">
+                        insertRole
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRole">
+                        编辑角色和角色业务模块关联
+<li>创建人：xiaopu</li>
+<li>创建时间：2015年9月10日</li>
+<li>创建目的：【】</li>
+<li>修改目的：【修改人：，修改时间：】</li>
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRoleXA">
+                        modifyRoleXA
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteRoleById">
+                        deleteRoleById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleDetailById">
+                        queryRoleDetailById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#findRoleByResourceId">
+                        findRoleByResourceId
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#saveInitRole">
+                        新增初始化角色和业务模块关联
+<li>创建人：xiaopu</li>
+<li>创建时间：2015年9月10日</li>
+<li>创建目的：【】</li>
+<li>修改目的：【修改人：，修改时间：】</li>
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyInitRole">
+                        modifyInitRole
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteInitRoleById">
+                        deleteInitRoleById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteByIds">
+                        deleteByIds
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleList">
+                        queryRoleList
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById">
+                        selectRoleById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#queryUserRoleByUserId">
+                        queryUserRoleByUserId
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectByRoleCode">
+                        selectByRoleCode
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById">
+                        selectRoleById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectDefaultRole">
+                        selectDefaultRole
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRolePage">
+                        selectRolePage
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading7" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse7" aria-controls="collapse7">
+                <i class="glyphicon glyphicon-align-justify"></i> UserAddressServiceImpl
+            </div>
+            <div id="collapse7" class="collapse " aria-labelledby="heading7">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserAddressServiceImpl.html#save">
+                        save
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserAddressServiceImpl.html#remove">
+                        remove
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserAddressServiceImpl.html#selectById">
+                        selectById
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading8" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse8" aria-controls="collapse8">
+                <i class="glyphicon glyphicon-align-justify"></i> UserRoleServiceImpl
+            </div>
+            <div id="collapse8" class="collapse in " aria-labelledby="heading8">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserRoleServiceImpl.html#queryUserRoleByUserId">
+                        queryUserRoleByUserId
+                    </a>
+            </div>
+        </div>
+        <div class="panel">
+            <div id="heading9" data-parent="#accordion" class="catalog-title" data-toggle="collapse"
+                 aria-expanded="true" data-target="#collapse9" aria-controls="collapse9">
+                <i class="glyphicon glyphicon-align-justify"></i> UserServiceImpl
+            </div>
+            <div id="collapse9" class="collapse " aria-labelledby="heading9">
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#addUser">
+                        addUser
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole">
+                        saveUserRole
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#selectByPrimaryKey">
+                        selectByPrimaryKey
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#selectByEmail">
+                        selectByEmail
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole">
+                        saveUserRole
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword">
+                        checkUserPassword
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserPassWord">
+                        modifyUserPassWord
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserForgetThePassword">
+                        <p><b>description:</b>忘记密码修改</p>
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserMobile">
+                        modifyUserMobile
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserEmail">
+                        modifyUserEmail
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkUniqueness">
+                        checkUniqueness
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#editUser">
+                        editUser
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToFreeze">
+                        modifyUserStatusToFreeze
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToUnFreeze">
+                        modifyUserStatusToUnFreeze
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToCancel">
+                        modifyUserStatusToCancel
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#modifyPassword">
+                        modifyPassword
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword">
+                        checkUserPassword
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#checkMobileAndEmail">
+                        checkMobileAndEmail
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#deleteById">
+                        deleteById
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#deleteByIds">
+                        deleteByIds
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryByPage">
+                        queryByPage
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryTimeExtraPage">
+                        queryTimeExtraPage
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryList">
+                        queryList
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#update">
+                        update
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#getUserByIdentityCode">
+                        getUserByIdentityCode
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#resetPassword">
+                        resetPassword
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#freezeUser">
+                        freezeUser
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#updateUserInfo">
+                        updateUserInfo
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#updatePassword">
+                        updatePassword
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#queryContacts">
+                        queryContacts
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#register">
+                        register
+                    </a>
+                    <a class="catalog-item" href="cn_enjoy_users_service_impl_UserServiceImpl.html#selectByAccount">
+                        selectByAccount
+                    </a>
+            </div>
+        </div>
+</div>    </div>
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+                <div class="d-flex justify-content-between">
+                    <a class="header-menu toggle-catalog" href="javascript:void(0)"><i
+                            class="glyphicon glyphicon-align-justify"></i> 目录</a>
+                </div>
+            </div>
+            <div class="page-wrapper">
+                <div class="page-inner">
+                    <div class="action-list">
+                        <div class="action-item">
+<h2 id="queryUserRoleByUserId"><a href="#">queryUserRoleByUserId </a></h2>
+<p><strong>请求URL</strong></p>
+<p>
+    <code>queryUserRoleByUserId</code>
+        <span class="label label-default">GET</span>
+        <span class="label label-default">POST</span>
+</p>
+    <p><strong>返回结果</strong></p>
+    <pre class="prettyprint lang-json">[{
+	"id":"string",
+	"userId":"string",
+	"roleId":"string",
+	"createUser":"string",
+	"createTime":"date"
+}]</pre>
+        <div class="form-group">
+            <a type="button" class="btn btn-sm btn-default" href="javaCodes/cn_enjoy_users_service_impl_UserRoleServiceImpl_queryUserRoleByUserId_cn.enjoy.sys.model.SysUserRole.html"><i
+                        class="fa fa-android" aria-hidden="true"></i> Android Model</a>
+            <a type="button" class="btn btn-sm btn-default" href="iosCodes/cn_enjoy_users_service_impl_UserRoleServiceImpl_queryUserRoleByUserId_cn.enjoy.sys.model.SysUserRole.html"><i class="fa fa-apple"
+                                                                                                 aria-hidden="true"></i>
+                iOS Model</a>
+        </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+<script>
+
+    var search_source_data = [
+            {name: '权限管理.验证oauth2.0客户端是否存在', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientId'},
+            {name: '权限管理.验证oauth2.0密码是否存在', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#checkClientSecret'},
+            {name: '权限管理.获取过期时间', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getExpireIn'},
+            {name: '权限管理.根据客户端id获取鉴权客户端信息', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#findClientByClientId'},
+            {name: '权限管理.获取所有的鉴权客户端信息', url: 'cn_enjoy_users_service_impl_AuthorizeServiceImpl.html#getClientMap'},
+            {name: 'DepartmentServiceImpl.数据库中没有排布', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#saveDepartment'},
+            {name: 'DepartmentServiceImpl.editDepartment', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#editDepartment'},
+            {name: 'DepartmentServiceImpl.loadDepartment', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#loadDepartment'},
+            {name: 'DepartmentServiceImpl.removeDepartment', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#removeDepartment'},
+            {name: 'DepartmentServiceImpl.selectDepartmentById', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectDepartmentById'},
+            {name: 'DepartmentServiceImpl.selectByToTree', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByToTree'},
+            {name: 'DepartmentServiceImpl.selectByUserId', url: 'cn_enjoy_users_service_impl_DepartmentServiceImpl.html#selectByUserId'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.findDictByType', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findDictByType'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryDictDataByCode', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByCode'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.findAllDict', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDict'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.findAllDictType', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findAllDictType'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.findSelectModelsByType', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#findSelectModelsByType'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryDictDataByTypeAndORDER', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryDictDataByTypeAndORDER'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryAllDictDataPage', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#queryAllDictDataPage'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteByIds', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteByIds'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.addDictData', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#addDictData'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectByPrimaryKey', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#selectByPrimaryKey'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteDictData', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#deleteDictData'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.freezeDictData', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#freezeDictData'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.updateDictData', url: 'cn_enjoy_users_service_impl_DictDataServiceImpl.html#updateDictData'},
+            {name: 'DictTypeServiceImpl.findDictByType', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findDictByType'},
+            {name: 'DictTypeServiceImpl.findAllDict', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDict'},
+            {name: 'DictTypeServiceImpl.findAllDictType', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findAllDictType'},
+            {name: 'DictTypeServiceImpl.findSelectModelsByType', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#findSelectModelsByType'},
+            {name: 'DictTypeServiceImpl.queryDictDataByTypeAndORDER', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryDictDataByTypeAndORDER'},
+            {name: 'DictTypeServiceImpl.queryAllDictTypePage', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#queryAllDictTypePage'},
+            {name: 'DictTypeServiceImpl.deleteByIds', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteByIds'},
+            {name: 'DictTypeServiceImpl.addDictType', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#addDictType'},
+            {name: 'DictTypeServiceImpl.selectByPrimaryKey', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#selectByPrimaryKey'},
+            {name: 'DictTypeServiceImpl.deleteDictType', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#deleteDictType'},
+            {name: 'DictTypeServiceImpl.freezeDictTyp', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#freezeDictTyp'},
+            {name: 'DictTypeServiceImpl.updateDictType', url: 'cn_enjoy_users_service_impl_DictTypeServiceImpl.html#updateDictType'},
+            {name: 'LoginServiceImpl.支持微信登录', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#login'},
+            {name: 'LoginServiceImpl.loginByStrToken', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#loginByStrToken'},
+            {name: 'LoginServiceImpl.登录处理', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#login'},
+            {name: 'LoginServiceImpl.查询菜单', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#queryMenus'},
+            {name: 'LoginServiceImpl.查询权限', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList'},
+            {name: 'LoginServiceImpl.查询权限', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#queryPermissionList'},
+            {name: 'LoginServiceImpl.login', url: 'cn_enjoy_users_service_impl_LoginServiceImpl.html#login'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.getMenuIdByUrl', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#getMenuIdByUrl'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryResourceTree', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceTree'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryInitResourceTree', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryInitResourceTree'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryResourceById', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#queryResourceById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.loadResourceData', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#loadResourceData'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.saveResource', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#saveResource'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectById', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.updateByPrimaryKey', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#updateByPrimaryKey'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectChildById', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectChildById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.lockResource', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResource'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.lockResourceAndChild', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#lockResourceAndChild'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectParentName', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentName'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectParentStatusById', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectParentStatusById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.unlockResource', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#unlockResource'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectResourceList', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceList'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectTreeViewResource', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectTreeViewResource'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteByPrimaryKey', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByPrimaryKey'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.getResourceByUrl', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#getResourceByUrl'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#getAllParentResourceListById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectbyUserId', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectbyUserId'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectBySysCode', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectBySysCode'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectResourceByCode', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByCode'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectResourceByParentId', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResourceByParentId'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteById', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteByIds', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#deleteByIds'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2016</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectResouceIdByRoleId', url: 'cn_enjoy_users_service_impl_ResourceServiceImpl.html#selectResouceIdByRoleId'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.addDefaultRoles', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#addDefaultRoles'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.新增角色和业务模块关联
+<li>创建人：xiaopu</li>
+<li>创建时间：2015年9月10日</li>
+<li>创建目的：【】</li>
+<li>修改目的：【修改人：，修改时间：】</li>', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#addRole'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.addRoleXA', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#addRoleXA'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.insertRole', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#insertRole'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.编辑角色和角色业务模块关联
+<li>创建人：xiaopu</li>
+<li>创建时间：2015年9月10日</li>
+<li>创建目的：【】</li>
+<li>修改目的：【修改人：，修改时间：】</li>', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRole'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.modifyRoleXA', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyRoleXA'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteRoleById', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteRoleById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryRoleDetailById', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleDetailById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.findRoleByResourceId', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#findRoleByResourceId'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.新增初始化角色和业务模块关联
+<li>创建人：xiaopu</li>
+<li>创建时间：2015年9月10日</li>
+<li>创建目的：【】</li>
+<li>修改目的：【修改人：，修改时间：】</li>', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#saveInitRole'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.modifyInitRole', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#modifyInitRole'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteInitRoleById', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteInitRoleById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.deleteByIds', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#deleteByIds'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryRoleList', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#queryRoleList'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectRoleById', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.queryUserRoleByUserId', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#queryUserRoleByUserId'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectByRoleCode', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectByRoleCode'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectRoleById', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRoleById'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectDefaultRole', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectDefaultRole'},
+            {name: '<p>Title: </p>
+<p>Description: </p>
+<p>Copyright: Copyright (c) 2009</p>
+<p>Company:享学信息科技有限公司 Co., Ltd.</p>.selectRolePage', url: 'cn_enjoy_users_service_impl_RoleServiceImpl.html#selectRolePage'},
+            {name: 'UserAddressServiceImpl.save', url: 'cn_enjoy_users_service_impl_UserAddressServiceImpl.html#save'},
+            {name: 'UserAddressServiceImpl.remove', url: 'cn_enjoy_users_service_impl_UserAddressServiceImpl.html#remove'},
+            {name: 'UserAddressServiceImpl.selectById', url: 'cn_enjoy_users_service_impl_UserAddressServiceImpl.html#selectById'},
+            {name: 'UserRoleServiceImpl.queryUserRoleByUserId', url: 'cn_enjoy_users_service_impl_UserRoleServiceImpl.html#queryUserRoleByUserId'},
+            {name: 'UserServiceImpl.addUser', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#addUser'},
+            {name: 'UserServiceImpl.saveUserRole', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole'},
+            {name: 'UserServiceImpl.selectByPrimaryKey', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#selectByPrimaryKey'},
+            {name: 'UserServiceImpl.selectByEmail', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#selectByEmail'},
+            {name: 'UserServiceImpl.saveUserRole', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#saveUserRole'},
+            {name: 'UserServiceImpl.checkUserPassword', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword'},
+            {name: 'UserServiceImpl.modifyUserPassWord', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserPassWord'},
+            {name: 'UserServiceImpl.<p><b>description:</b>忘记密码修改</p>', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserForgetThePassword'},
+            {name: 'UserServiceImpl.modifyUserMobile', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserMobile'},
+            {name: 'UserServiceImpl.modifyUserEmail', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserEmail'},
+            {name: 'UserServiceImpl.checkUniqueness', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkUniqueness'},
+            {name: 'UserServiceImpl.editUser', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#editUser'},
+            {name: 'UserServiceImpl.modifyUserStatusToFreeze', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToFreeze'},
+            {name: 'UserServiceImpl.modifyUserStatusToUnFreeze', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToUnFreeze'},
+            {name: 'UserServiceImpl.modifyUserStatusToCancel', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyUserStatusToCancel'},
+            {name: 'UserServiceImpl.modifyPassword', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#modifyPassword'},
+            {name: 'UserServiceImpl.checkUserPassword', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkUserPassword'},
+            {name: 'UserServiceImpl.checkMobileAndEmail', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#checkMobileAndEmail'},
+            {name: 'UserServiceImpl.deleteById', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#deleteById'},
+            {name: 'UserServiceImpl.deleteByIds', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#deleteByIds'},
+            {name: 'UserServiceImpl.queryByPage', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryByPage'},
+            {name: 'UserServiceImpl.queryTimeExtraPage', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryTimeExtraPage'},
+            {name: 'UserServiceImpl.queryList', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryList'},
+            {name: 'UserServiceImpl.update', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#update'},
+            {name: 'UserServiceImpl.getUserByIdentityCode', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#getUserByIdentityCode'},
+            {name: 'UserServiceImpl.resetPassword', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#resetPassword'},
+            {name: 'UserServiceImpl.freezeUser', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#freezeUser'},
+            {name: 'UserServiceImpl.updateUserInfo', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#updateUserInfo'},
+            {name: 'UserServiceImpl.updatePassword', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#updatePassword'},
+            {name: 'UserServiceImpl.queryContacts', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#queryContacts'},
+            {name: 'UserServiceImpl.register', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#register'},
+            {name: 'UserServiceImpl.selectByAccount', url: 'cn_enjoy_users_service_impl_UserServiceImpl.html#selectByAccount'},
+    ];
+
+
+
+    $('.toggle-catalog').click(function () {
+        $('.book').toggleClass('with-summary');
+    });
+
+    $('#inputSearch').autocomplete({hint: false}, [
+        {
+            source: function (query, callback) {
+                var result = [];
+                for(var i = 0; i !== search_source_data.length; i++){
+                    if(search_source_data[i].name.indexOf(query) !== -1){
+                        result.push(search_source_data[i]);
+                    }
+                }
+                callback(result);
+            },
+            displayKey: 'name',
+            templates: {
+                suggestion: function (suggestion) {
+                    return suggestion.name;
+                }
+            }
+        }
+    ]).on('autocomplete:selected', function (event, suggestion, dataset, context) {
+        self.location = suggestion.url;
+    });
+</script>
+</body>
+</html>

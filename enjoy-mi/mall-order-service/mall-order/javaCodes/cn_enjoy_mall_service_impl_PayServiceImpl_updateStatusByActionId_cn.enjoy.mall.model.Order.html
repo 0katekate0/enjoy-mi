@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.mall.model.Order</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.Order implements Serializable{
+
+    private String orderType; //
+    private long orderId; //
+    private String orderSn; //
+    private String userId; //
+    private int orderStatus; //
+    private int shippingStatus; //
+    private int payStatus; //
+    private String consignee; //
+    private String area; //
+    private String address; //
+    private String zipcode; //
+    private String mobile; //
+    private String email; //
+    private String shippingCode; //
+    private String shippingName; //
+    private String payCode; //
+    private String payName; //
+    private String invoiceTitle; //
+    private double goodsPrice; //
+    private double shippingPrice; //
+    private double userMoney; //
+    private double couponPrice; //
+    private int integral; //
+    private double integralMoney; //
+    private double orderAmount; //
+    private double totalAmount; //
+    private long addTime; //
+    private long shippingTime; //
+    private long confirmTime; //
+    private long payTime; //
+    private short orderPromId; //
+    private double orderPromAmount; //
+    private double discount; //
+    private String userNote; //
+    private String adminNote; //
+    private String parentSn; //
+    private boolean isDistribut; //
+    private long receiveTime; //
+    private [] orderGoodsList; //
+
+    public String getOrderType(){
+        return orderType;
+    }
+
+    public void setOrderType(String orderType){
+        this.orderType = orderType;
+    }
+
+    public long getOrderId(){
+        return orderId;
+    }
+
+    public void setOrderId(long orderId){
+        this.orderId = orderId;
+    }
+
+    public String getOrderSn(){
+        return orderSn;
+    }
+
+    public void setOrderSn(String orderSn){
+        this.orderSn = orderSn;
+    }
+
+    public String getUserId(){
+        return userId;
+    }
+
+    public void setUserId(String userId){
+        this.userId = userId;
+    }
+
+    public int getOrderStatus(){
+        return orderStatus;
+    }
+
+    public void setOrderStatus(int orderStatus){
+        this.orderStatus = orderStatus;
+    }
+
+    public int getShippingStatus(){
+        return shippingStatus;
+    }
+
+    public void setShippingStatus(int shippingStatus){
+        this.shippingStatus = shippingStatus;
+    }
+
+    public int getPayStatus(){
+        return payStatus;
+    }
+
+    public void setPayStatus(int payStatus){
+        this.payStatus = payStatus;
+    }
+
+    public String getConsignee(){
+        return consignee;
+    }
+
+    public void setConsignee(String consignee){
+        this.consignee = consignee;
+    }
+
+    public String getArea(){
+        return area;
+    }
+
+    public void setArea(String area){
+        this.area = area;
+    }
+
+    public String getAddress(){
+        return address;
+    }
+
+    public void setAddress(String address){
+        this.address = address;
+    }
+
+    public String getZipcode(){
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode){
+        this.zipcode = zipcode;
+    }
+
+    public String getMobile(){
+        return mobile;
+    }
+
+    public void setMobile(String mobile){
+        this.mobile = mobile;
+    }
+
+    public String getEmail(){
+        return email;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public String getShippingCode(){
+        return shippingCode;
+    }
+
+    public void setShippingCode(String shippingCode){
+        this.shippingCode = shippingCode;
+    }
+
+    public String getShippingName(){
+        return shippingName;
+    }
+
+    public void setShippingName(String shippingName){
+        this.shippingName = shippingName;
+    }
+
+    public String getPayCode(){
+        return payCode;
+    }
+
+    public void setPayCode(String payCode){
+        this.payCode = payCode;
+    }
+
+    public String getPayName(){
+        return payName;
+    }
+
+    public void setPayName(String payName){
+        this.payName = payName;
+    }
+
+    public String getInvoiceTitle(){
+        return invoiceTitle;
+    }
+
+    public void setInvoiceTitle(String invoiceTitle){
+        this.invoiceTitle = invoiceTitle;
+    }
+
+    public double getGoodsPrice(){
+        return goodsPrice;
+    }
+
+    public void setGoodsPrice(double goodsPrice){
+        this.goodsPrice = goodsPrice;
+    }
+
+    public double getShippingPrice(){
+        return shippingPrice;
+    }
+
+    public void setShippingPrice(double shippingPrice){
+        this.shippingPrice = shippingPrice;
+    }
+
+    public double getUserMoney(){
+        return userMoney;
+    }
+
+    public void setUserMoney(double userMoney){
+        this.userMoney = userMoney;
+    }
+
+    public double getCouponPrice(){
+        return couponPrice;
+    }
+
+    public void setCouponPrice(double couponPrice){
+        this.couponPrice = couponPrice;
+    }
+
+    public int getIntegral(){
+        return integral;
+    }
+
+    public void setIntegral(int integral){
+        this.integral = integral;
+    }
+
+    public double getIntegralMoney(){
+        return integralMoney;
+    }
+
+    public void setIntegralMoney(double integralMoney){
+        this.integralMoney = integralMoney;
+    }
+
+    public double getOrderAmount(){
+        return orderAmount;
+    }
+
+    public void setOrderAmount(double orderAmount){
+        this.orderAmount = orderAmount;
+    }
+
+    public double getTotalAmount(){
+        return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount){
+        this.totalAmount = totalAmount;
+    }
+
+    public long getAddTime(){
+        return addTime;
+    }
+
+    public void setAddTime(long addTime){
+        this.addTime = addTime;
+    }
+
+    public long getShippingTime(){
+        return shippingTime;
+    }
+
+    public void setShippingTime(long shippingTime){
+        this.shippingTime = shippingTime;
+    }
+
+    public long getConfirmTime(){
+        return confirmTime;
+    }
+
+    public void setConfirmTime(long confirmTime){
+        this.confirmTime = confirmTime;
+    }
+
+    public long getPayTime(){
+        return payTime;
+    }
+
+    public void setPayTime(long payTime){
+        this.payTime = payTime;
+    }
+
+    public short getOrderPromId(){
+        return orderPromId;
+    }
+
+    public void setOrderPromId(short orderPromId){
+        this.orderPromId = orderPromId;
+    }
+
+    public double getOrderPromAmount(){
+        return orderPromAmount;
+    }
+
+    public void setOrderPromAmount(double orderPromAmount){
+        this.orderPromAmount = orderPromAmount;
+    }
+
+    public double getDiscount(){
+        return discount;
+    }
+
+    public void setDiscount(double discount){
+        this.discount = discount;
+    }
+
+    public String getUserNote(){
+        return userNote;
+    }
+
+    public void setUserNote(String userNote){
+        this.userNote = userNote;
+    }
+
+    public String getAdminNote(){
+        return adminNote;
+    }
+
+    public void setAdminNote(String adminNote){
+        this.adminNote = adminNote;
+    }
+
+    public String getParentSn(){
+        return parentSn;
+    }
+
+    public void setParentSn(String parentSn){
+        this.parentSn = parentSn;
+    }
+
+    public boolean getIsDistribut(){
+        return isDistribut;
+    }
+
+    public void setIsDistribut(boolean isDistribut){
+        this.isDistribut = isDistribut;
+    }
+
+    public long getReceiveTime(){
+        return receiveTime;
+    }
+
+    public void setReceiveTime(long receiveTime){
+        this.receiveTime = receiveTime;
+    }
+
+    public [] getOrderGoodsList(){
+        return orderGoodsList;
+    }
+
+    public void setOrderGoodsList([] orderGoodsList){
+        this.orderGoodsList = orderGoodsList;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.OrderGoods implements Serializable{
+
+    private String orderType; //
+    private long recId; //
+    private long orderId; //
+    private int specGoodsId; //
+    private int goodsId; //
+    private String goodsName; //
+    private String goodsSn; //
+    private short goodsNum; //
+    private double marketPrice; //
+    private double goodsPrice; //
+    private double costPrice; //
+    private double memberGoodsPrice; //
+    private int giveIntegral; //
+    private String specKey; //
+    private String specKeyName; //
+    private String barCode; //
+    private boolean isComment; //
+    private boolean promType; //
+    private int promId; //
+    private boolean isSend; //
+    private int deliveryId; //
+    private String sku; //
+    private String originalImg; //
+
+    public String getOrderType(){
+        return orderType;
+    }
+
+    public void setOrderType(String orderType){
+        this.orderType = orderType;
+    }
+
+    public long getRecId(){
+        return recId;
+    }
+
+    public void setRecId(long recId){
+        this.recId = recId;
+    }
+
+    public long getOrderId(){
+        return orderId;
+    }
+
+    public void setOrderId(long orderId){
+        this.orderId = orderId;
+    }
+
+    public int getSpecGoodsId(){
+        return specGoodsId;
+    }
+
+    public void setSpecGoodsId(int specGoodsId){
+        this.specGoodsId = specGoodsId;
+    }
+
+    public int getGoodsId(){
+        return goodsId;
+    }
+
+    public void setGoodsId(int goodsId){
+        this.goodsId = goodsId;
+    }
+
+    public String getGoodsName(){
+        return goodsName;
+    }
+
+    public void setGoodsName(String goodsName){
+        this.goodsName = goodsName;
+    }
+
+    public String getGoodsSn(){
+        return goodsSn;
+    }
+
+    public void setGoodsSn(String goodsSn){
+        this.goodsSn = goodsSn;
+    }
+
+    public short getGoodsNum(){
+        return goodsNum;
+    }
+
+    public void setGoodsNum(short goodsNum){
+        this.goodsNum = goodsNum;
+    }
+
+    public double getMarketPrice(){
+        return marketPrice;
+    }
+
+    public void setMarketPrice(double marketPrice){
+        this.marketPrice = marketPrice;
+    }
+
+    public double getGoodsPrice(){
+        return goodsPrice;
+    }
+
+    public void setGoodsPrice(double goodsPrice){
+        this.goodsPrice = goodsPrice;
+    }
+
+    public double getCostPrice(){
+        return costPrice;
+    }
+
+    public void setCostPrice(double costPrice){
+        this.costPrice = costPrice;
+    }
+
+    public double getMemberGoodsPrice(){
+        return memberGoodsPrice;
+    }
+
+    public void setMemberGoodsPrice(double memberGoodsPrice){
+        this.memberGoodsPrice = memberGoodsPrice;
+    }
+
+    public int getGiveIntegral(){
+        return giveIntegral;
+    }
+
+    public void setGiveIntegral(int giveIntegral){
+        this.giveIntegral = giveIntegral;
+    }
+
+    public String getSpecKey(){
+        return specKey;
+    }
+
+    public void setSpecKey(String specKey){
+        this.specKey = specKey;
+    }
+
+    public String getSpecKeyName(){
+        return specKeyName;
+    }
+
+    public void setSpecKeyName(String specKeyName){
+        this.specKeyName = specKeyName;
+    }
+
+    public String getBarCode(){
+        return barCode;
+    }
+
+    public void setBarCode(String barCode){
+        this.barCode = barCode;
+    }
+
+    public boolean getIsComment(){
+        return isComment;
+    }
+
+    public void setIsComment(boolean isComment){
+        this.isComment = isComment;
+    }
+
+    public boolean getPromType(){
+        return promType;
+    }
+
+    public void setPromType(boolean promType){
+        this.promType = promType;
+    }
+
+    public int getPromId(){
+        return promId;
+    }
+
+    public void setPromId(int promId){
+        this.promId = promId;
+    }
+
+    public boolean getIsSend(){
+        return isSend;
+    }
+
+    public void setIsSend(boolean isSend){
+        this.isSend = isSend;
+    }
+
+    public int getDeliveryId(){
+        return deliveryId;
+    }
+
+    public void setDeliveryId(int deliveryId){
+        this.deliveryId = deliveryId;
+    }
+
+    public String getSku(){
+        return sku;
+    }
+
+    public void setSku(String sku){
+        this.sku = sku;
+    }
+
+    public String getOriginalImg(){
+        return originalImg;
+    }
+
+    public void setOriginalImg(String originalImg){
+        this.originalImg = originalImg;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

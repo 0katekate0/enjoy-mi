@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.sys.model.DepartmentTree</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.sys.model.DepartmentTree implements Serializable{
+
+    private String id; //
+    private String title; //
+    private boolean selected; //
+    private String parentId; //
+    private [] children; //
+
+    public String getId(){
+        return id;
+    }
+
+    public void setId(String id){
+        this.id = id;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public boolean getSelected(){
+        return selected;
+    }
+
+    public void setSelected(boolean selected){
+        this.selected = selected;
+    }
+
+    public String getParentId(){
+        return parentId;
+    }
+
+    public void setParentId(String parentId){
+        this.parentId = parentId;
+    }
+
+    public [] getChildren(){
+        return children;
+    }
+
+    public void setChildren([] children){
+        this.children = children;
+    }
+
+}
+</pre>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.core.utils.GridModel</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.core.utils.GridModel implements Serializable{
+
+    private int page; //
+    private long records; //
+    private int total; //
+    private [] rows; //
+
+    public int getPage(){
+        return page;
+    }
+
+    public void setPage(int page){
+        this.page = page;
+    }
+
+    public long getRecords(){
+        return records;
+    }
+
+    public void setRecords(long records){
+        this.records = records;
+    }
+
+    public int getTotal(){
+        return total;
+    }
+
+    public void setTotal(int total){
+        this.total = total;
+    }
+
+    public [] getRows(){
+        return rows;
+    }
+
+    public void setRows([] rows){
+        this.rows = rows;
+    }
+
+}
+</pre>
+
+
+<pre class="prettyprint lang-java">
+public class cn.enjoy.mall.model.GoodsAttribute implements Serializable{
+
+    private int attrId; //
+    private String attrName; //
+    private short typeId; //
+    private byte attrIndex; //
+    private byte attrType; //
+    private byte attrInputType; //
+    private byte order; //
+    private String attrValues; //
+
+    public int getAttrId(){
+        return attrId;
+    }
+
+    public void setAttrId(int attrId){
+        this.attrId = attrId;
+    }
+
+    public String getAttrName(){
+        return attrName;
+    }
+
+    public void setAttrName(String attrName){
+        this.attrName = attrName;
+    }
+
+    public short getTypeId(){
+        return typeId;
+    }
+
+    public void setTypeId(short typeId){
+        this.typeId = typeId;
+    }
+
+    public byte getAttrIndex(){
+        return attrIndex;
+    }
+
+    public void setAttrIndex(byte attrIndex){
+        this.attrIndex = attrIndex;
+    }
+
+    public byte getAttrType(){
+        return attrType;
+    }
+
+    public void setAttrType(byte attrType){
+        this.attrType = attrType;
+    }
+
+    public byte getAttrInputType(){
+        return attrInputType;
+    }
+
+    public void setAttrInputType(byte attrInputType){
+        this.attrInputType = attrInputType;
+    }
+
+    public byte getOrder(){
+        return order;
+    }
+
+    public void setOrder(byte order){
+        this.order = order;
+    }
+
+    public String getAttrValues(){
+        return attrValues;
+    }
+
+    public void setAttrValues(String attrValues){
+        this.attrValues = attrValues;
+    }
+
+}
+</pre>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

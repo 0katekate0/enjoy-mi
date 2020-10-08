@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>cn.enjoy.sys.model.MenuModel</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.css">
+<link href="../style.css" rel="stylesheet" />
+</head>
+<body onload="PR.prettyPrint()">
+<pre class="prettyprint lang-java">
+public class cn.enjoy.sys.model.MenuModel implements Serializable{
+
+    private String id; //
+    private String title; //
+    private String icon; //
+    private String url; //
+    private String code; //
+    private [] children; //
+
+    public String getId(){
+        return id;
+    }
+
+    public void setId(String id){
+        this.id = id;
+    }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public String getIcon(){
+        return icon;
+    }
+
+    public void setIcon(String icon){
+        this.icon = icon;
+    }
+
+    public String getUrl(){
+        return url;
+    }
+
+    public void setUrl(String url){
+        this.url = url;
+    }
+
+    public String getCode(){
+        return code;
+    }
+
+    public void setCode(String code){
+        this.code = code;
+    }
+
+    public [] getChildren(){
+        return children;
+    }
+
+    public void setChildren([] children){
+        this.children = children;
+    }
+
+}
+</pre>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/google-code-prettify@1.0.5/bin/prettify.min.js"></script>
+</body>
+</html>

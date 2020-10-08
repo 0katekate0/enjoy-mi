@@ -1,0 +1,14 @@
+server:
+  port: 8180
+  servlet:
+    context-path: /mall-account
+  tomcat:
+    max-threads: 1000
+    accept-count: 1000
+    max-connections: 2000
+    uri-encoding: UTF-8
+
+
+spring:
+  profiles:
+    active: ${cn.pro.active:test}
